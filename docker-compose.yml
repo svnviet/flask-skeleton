@@ -1,7 +1,35 @@
+
+
 services:
-  web:
+  flaskdemo:
     container_name: flaskdemo
-    #image: demo2
+#image: demo2
     build: .
     ports:
       - "5000:5000"
+    depends_on:
+      - demodb
+
+  demodb:
+    container_name: demodb
+    image: postgres:13
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=demodev
+    ports:
+      - "5432:5432"
+
+  demonginx:
+    container_name: demonginx
+    build:
+      context: ./docker/nginx/
+
+    ports:
+      - "8080:80"
+    depends_on:
+      - flaskdemo
+volumes:
+  postgres_data:

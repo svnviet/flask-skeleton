@@ -23,7 +23,7 @@ class DevelopmentConfig(BaseConfig):
 
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = os.environ.get(
-        'DEVEL_DATABASE_URL', 'sqlite:///' + os.path.join(base_dir, 'database-devel.sqlite3'))
+        'DEVEL_DATABASE_URI', 'postgresql://postgres:postgres@demodb:5432/demodev')
 
 
 class TestingConfig(BaseConfig):
