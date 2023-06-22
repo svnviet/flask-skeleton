@@ -2,3 +2,29 @@
 * {
     border-radius: 0 !important;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info .info-com {
+    display: flex;
+    align-items: center;
+}
+
+.info .info-com img {
+    width: 110px;
+}
+
+.info {
+    display: flex;
+}
+
+.location-com {
+    display: flex
+}
+
+.location-com .img {
+    width: 30px;
+}

@@ -12,7 +12,7 @@
   <!-- styles -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="../static/main.css" >
   {% block links %}{% endblock %}
 </head>
 
@@ -23,7 +23,7 @@
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
       <div class="container">
         <!-- Navbar Brand -->
-        <a class="navbar-brand" href="{{ url_for('main.index') }}">{{ config.APP_NAME }}</a>
+        <a class="navbar-brand" href="{{ url_for('main.index') }}">"{{ url_for('static', filename='main.css') }}" </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -58,6 +58,21 @@
       </div>
     </nav>
   </header>
+
+  <header>
+    <div class="info">
+      <div class="info-com">
+        <a class="test" href="/"><img src={{ config.IMAGE }} alt="CÔNG TY TNHH SẢN XUẤT<br> THƯƠNG MẠI QUANG MINH"></a>
+        <div class="company-name">CÔNG TY TNHH SẢN XUẤT<br> THƯƠNG MẠI QUANG MINH</div>
+      </div>
+      <div class="location-com">
+        <a href="/"><img src="https://quangminhltd.com.vn/css/images/icon_add.png"></a>
+        <p class="address"><span>Địa chỉ:</span><br>Số 62-68, Lô N4, Chung cư Dụ Nghĩa, Lê Thiện, An Dương, HP</p>
+      </div>
+    </div>
+  </header>
+
+
   <!-- Flash Messages -->
   {% with messages = get_flashed_messages(with_categories=true) %}
   {% if messages %}

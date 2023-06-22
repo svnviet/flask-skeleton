@@ -11,12 +11,16 @@ class BaseConfig(object):
     SECRET_KEY = os.environ.get('SECRET_KEY', 'Ensure you set a secret key, this is important!')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     WTF_CSRF_ENABLED = False
+    IMAGE = 'https://png.pngtree.com/element_our/20190528/ourmid/pngtree-url-small-icon-opened-in-the-browser-image_1132270.jpg'
+    STATIC = os.path.join(base_dir, 'app/static/')
 
     @staticmethod
     def configure(app):
         # Implement this method to do further configuration on your app.
         pass 
-
+    
+    def static_media(self, path):
+        return os.path.join(self.STATIC, path)
 
 class DevelopmentConfig(BaseConfig):
     """Development configuration."""

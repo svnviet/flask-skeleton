@@ -3,9 +3,10 @@ FROM ubuntu
 RUN apt-get update
 RUN apt-get install -y --no-install-recommends python3.10 python3-pip
 # It specifies the working directory where the Docker container will run
+COPY . /app
+USER www
 WORKDIR /app
 # Copying all the application files to the working directory
-COPY . .
 #RUN apt-get install python3-pip
 # Install all the dependencies required to run the Flask application
 RUN pip3 install -r requirements.txt

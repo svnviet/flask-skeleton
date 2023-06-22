@@ -4,6 +4,7 @@ import click
 from app import create_app, db, models, forms
 
 app = create_app()
+app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 
 # flask cli context setup
