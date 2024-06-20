@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import click
 
-from app import create_app, db, models, forms
+from app import create_app
 
 app = create_app()
 
@@ -10,7 +10,7 @@ app = create_app()
 @app.shell_context_processor
 def get_context():
     """Objects exposed here will be automatically available from the shell."""
-    return dict(app=app, db=db, models=models, forms=forms)
+    return dict(app=app)
 
 
 @app.cli.command()

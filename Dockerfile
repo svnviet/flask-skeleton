@@ -1,7 +1,7 @@
 # We will use python:3.10 inside ubuntu-base
 FROM ubuntu
 RUN apt-get update
-RUN apt-get install -y --no-install-recommends python3.10 python3-pip
+RUN apt-get install -y --no-install-recommends python3.11 python3-pip
 # It specifies the working directory where the Docker container will run
 WORKDIR /app
 # Copying all the application files to the working directory
