@@ -865,15 +865,15 @@
           href="https://thangmaymini.com/comments/feed"/>
 
     <link rel='stylesheet' id='kk-star-ratings-css'
-          href='https://thangmaymini.com/wp-content/plugins/kk-star-ratings/src/core/public/css/kk-star-ratings.min.css?ver=5.4.7'
+          href="{{ url_for('static', filename='wp-content/plugins/kk-star-ratings/src/core/public/css/kk-star-ratings.min.css') }}"
           media="not all" data-media="all"
           onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
     <link rel='stylesheet' id='generate-widget-areas-css'
-          href='https://thangmaymini.com/wp-content/themes/generatepress/assets/css/components/widget-areas.min.css?ver=3.3.1'
+          href="{{ url_for('static', filename='wp-content/themes/generatepress/assets/css/components/widget-areas.min.css') }}"
           media="not all" data-media="all"
           onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
     <link rel='stylesheet' id='generate-style-css'
-          href='https://thangmaymini.com/wp-content/themes/generatepress/assets/css/main.min.css?ver=3.3.1'
+          href="{{ url_for('static', filename='wp-content/themes/generatepress/assets/css/main.min.css') }}"
           media="not all" data-media="all"
           onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
@@ -882,54 +882,58 @@
           media="not all" data-media="all"
           onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
     <link rel='stylesheet' id='elementor-frontend-css'
-          href='https://thangmaymini.com/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.20.2'
+          href="{{ url_for('static', filename='wp-content/plugins/elementor/assets/css/frontend-lite.min.css') }}"
           media="not all" data-media="all"
           onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
     <link rel='stylesheet' id='swiper-css'
-          href='https://thangmaymini.com/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5'
+          href="{{ url_for('static', filename='wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css') }}"
           media="not all" data-media="all"
           onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
     <link rel='stylesheet' id='elementor-post-13993-css'
-          href='https://thangmaymini.com/wp-content/uploads/elementor/css/post-13993.css?ver=1709695851' media="not all"
+          href="{{ url_for('static', filename='wp-content/uploads/elementor/css/post-13993.css') }}"
           data-media="all"
           onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
-    <link rel='stylesheet' id='elementor-global-css'
-          href='https://thangmaymini.com/wp-content/uploads/elementor/css/global.css?ver=1709695852' media="not all"
+    <link rel='stylesheet' id='elementor-global-css' media="not all"
+          href="{{ url_for('static', filename='wp-content/uploads/elementor/css/global.css') }}"
           data-media="all"
           onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
-    <link rel='stylesheet' id='elementor-post-7-css'
-          href='https://thangmaymini.com/wp-content/uploads/elementor/css/post-7.css?ver=1717065129' media="not all"
+    <link rel='stylesheet' id='elementor-post-7-css' media="not all"
+          href="{{ url_for('static', filename='wp-content/uploads/elementor/css/post-7.css') }}"
           data-media="all"
           onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
     <link rel='stylesheet' id='generate-offside-css'
           href='https://thangmaymini.com/wp-content/plugins/gp-premium/menu-plus/functions/css/offside.min.css?ver=2.3.1'
+          href="{{ url_for('static', filename='css/styles.css') }}"
           media="not all" data-media="all"
           onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
     <link rel='stylesheet' id='generate-navigation-branding-css'
-          href='https://thangmaymini.com/wp-content/plugins/gp-premium/menu-plus/functions/css/navigation-branding-flex.min.css?ver=2.3.1'
+          href="{{ url_for('static', filename='wp-content/plugins/gp-premium/menu-plus/functions/css/navigation-branding-flex.min.css') }}"
           media="not all" data-media="all"
           onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
 
     <link rel='stylesheet' id='elementor-icons-shared-0-css'
-          href='https://thangmaymini.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3'
+          href="{{ url_for('static', filename='wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css') }}"
           media="not all" data-media="all"
           onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
     <link rel='stylesheet' id='elementor-icons-fa-solid-css'
-          href='https://thangmaymini.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3'
+          href="{{ url_for('static', filename='wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css') }}"
           media="not all" data-media="all"
           onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
     <meta name="generator"
           content="Elementor 3.20.2; features: e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints, block_editor_assets_optimize, e_image_loading_optimization; settings: css_print_method-external, google_font-enabled, font_display-swap">
     <link rel="icon"
-          href="https://thangmaymini.com/wp-content/uploads/2024/05/cropped-cropped-1660760acd536d0d3442-32x32.jpg"
+          href="{{ url_for('static', filename='wp-content/uploads/2024/05/cropped-cropped-1660760acd536d0d3442-32x32.jpg') }}"
           sizes="32x32"/>
     <link rel="icon"
-          href="https://thangmaymini.com/wp-content/uploads/2024/05/cropped-cropped-1660760acd536d0d3442-192x192.jpg"
+          href="{{ url_for('static', filename='wp-content/uploads/2024/05/cropped-cropped-1660760acd536d0d3442-192x192.jpg') }}"
           sizes="192x192"/>
     <link rel="apple-touch-icon"
-          href="https://thangmaymini.com/wp-content/uploads/2024/05/cropped-cropped-1660760acd536d0d3442-180x180.jpg"/>
+          href="{{ url_for('static', filename='wp-content/uploads/2024/05/cropped-cropped-1660760acd536d0d3442-180x180.jpg') }}"
+    />
     <meta name="msapplication-TileImage"
-          content="https://thangmaymini.com/wp-content/uploads/2024/05/cropped-cropped-1660760acd536d0d3442-270x270.jpg"/>
+          content="https://thangmaymini.com/wp-content/uploads/2024/05/cropped-cropped-1660760acd536d0d3442-270x270.jpg"
+          href="{{ url_for('static', filename='css/styles.css') }}"
+    />
 </head>
 
 <body data-rsssl=1
@@ -943,6 +947,7 @@
             <a href="https://thangmaymini.com/" rel="home">
                 <img fetchpriority="high" class="header-image is-logo-image" alt="Thang máy Gia Định"
                      src="https://thangmaymini.com/wp-content/uploads/2024/05/cropped-1660760acd536d0d3442.jpg"
+                     href="{{ url_for('static', filename='css/styles.css') }}"
                      srcset="https://thangmaymini.com/wp-content/uploads/2024/05/cropped-1660760acd536d0d3442.jpg 1x, https://thangmaymini.com/wp-content/uploads/2024/05/cropped-1660760acd536d0d3442.jpg 2x"
                      width="1280" height="1173"/>
             </a>
@@ -980,9 +985,9 @@
                         </a>
                     </div>
                 </div>
-                <form method="get" class="search-form navigation-search" action="https://thangmaymini.com/">
-                    <input type="search" class="search-field" value="" name="s" title="Tìm kiếm"/>
-                </form>
+<!--                <form method="get" class="search-form navigation-search" action="https://thangmaymini.com/">-->
+<!--                    <input type="search" class="search-field" value="" name="s" title="Tìm kiếm"/>-->
+<!--                </form>-->
                 <button class="menu-toggle" aria-controls="generate-slideout-menu" aria-expanded="false">
                     <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
                                                               xmlns="http://www.w3.org/2000/svg" width="1em"
@@ -2473,7 +2478,7 @@
     </div>
 </div>
 <link rel='stylesheet' id='yarppRelatedCss-css'
-      href='https://thangmaymini.com/wp-content/plugins/yet-another-related-posts-plugin/style/related.css?ver=5.30.10'
+      href="{{ url_for('static', filename='wp-content/plugins/yet-another-related-posts-plugin/style/related.css') }}"
       media="not all" data-media="all"
       onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
 
