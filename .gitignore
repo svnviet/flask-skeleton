@@ -21,3 +21,6 @@ htmlcov/
 .mypy_cache/
 .pytest_cache/
 .python-version
+
+# Resource
+app/templates/clone/
