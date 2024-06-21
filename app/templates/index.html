@@ -1,9 +1,2782 @@
-{#{% extends "base.html" %}#}
+<!DOCTYPE html>
+<html lang="vi" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <style id="jetpack-boost-critical-css">@media all {
+    @charset "UTF-8";.wp-block-columns {
+            align-items: normal !important;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap !important
+        }
 
-{#{% block content %}#}
-<div class="container">
-  <h1>Welcome!</h1>
-  <hr>
-  <p>Add some content here!</p>
+        @media (min-width: 782px) {
+            .wp-block-columns {
+                flex-wrap: nowrap !important
+            }
+        }@media (max-width: 781px) {
+            .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
+                flex-basis: 100% !important
+            }
+        }@media (min-width: 782px) {
+            .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
+                flex-basis: 0;
+                flex-grow: 1
+            }
+        }:where(.wp-block-columns) {
+             margin-bottom: 1.75em
+         }
+
+        .wp-block-column {
+            flex-grow: 1;
+            min-width: 0;
+            overflow-wrap: break-word;
+            word-break: break-word
+        }
+
+        .wp-block-latest-posts {
+            box-sizing: border-box
+        }
+
+        .wp-block-latest-posts.alignleft {
+            margin-right: 2em
+        }
+
+        .wp-block-latest-posts.wp-block-latest-posts__list {
+            list-style: none;
+            padding-left: 0
+        }
+
+        .wp-block-latest-posts.wp-block-latest-posts__list li {
+            clear: both
+        }
+
+        ul {
+            box-sizing: border-box
+        }
+
+        .screen-reader-text {
+            clip: rect(1px, 1px, 1px, 1px);
+            word-wrap: normal !important;
+            border: 0;
+            -webkit-clip-path: inset(50%);
+            clip-path: inset(50%);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px
+        }
+    }
+
+    @media all {
+        body, h1, h2, h4, html, li, p, ul {
+            margin: 0;
+            padding: 0;
+            border: 0
+        }
+
+        html {
+            font-family: sans-serif;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale
+        }
+
+        main {
+            display: block
+        }
+
+        html {
+            box-sizing: border-box
+        }
+
+        * {
+            box-sizing: inherit
+        }
+
+        button, input {
+            font-family: inherit;
+            font-size: 100%;
+            margin: 0
+        }
+
+        [type=search] {
+            -webkit-appearance: textfield;
+            outline-offset: -2px
+        }
+
+        body, button, input {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 400;
+            text-transform: none;
+            font-size: 17px;
+            line-height: 1.5
+        }
+
+        p {
+            margin-bottom: 1.5em
+        }
+
+        h1, h2, h4 {
+            font-family: inherit;
+            font-size: 100%;
+            font-style: inherit;
+            font-weight: inherit
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            line-height: 1.2em;
+            font-weight: 400;
+            text-transform: none
+        }
+
+        h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+            line-height: 1.2em;
+            font-weight: 400;
+            text-transform: none
+        }
+
+        h4 {
+            font-size: 24px
+        }
+
+        h4 {
+            margin-bottom: 20px
+        }
+
+        ul {
+            margin: 0 0 1.5em 3em
+        }
+
+        ul {
+            list-style: disc
+        }
+
+        li > ul {
+            margin-bottom: 0;
+            margin-left: 1.5em
+        }
+
+        img {
+            height: auto;
+            max-width: 100%
+        }
+
+        button {
+            background: #55555e;
+            color: #fff;
+            border: 1px solid transparent;
+            -webkit-appearance: button;
+            padding: 10px 20px
+        }
+
+        input[type=search] {
+            border: 1px solid;
+            border-radius: 0;
+            padding: 10px 15px;
+            max-width: 100%
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        .alignleft {
+            float: left;
+            margin-right: 1.5em
+        }
+
+        .size-full {
+            max-width: 100%;
+            height: auto
+        }
+
+        .screen-reader-text {
+            border: 0;
+            clip: rect(1px, 1px, 1px, 1px);
+            -webkit-clip-path: inset(50%);
+            clip-path: inset(50%);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute !important;
+            width: 1px;
+            word-wrap: normal !important
+        }
+
+        .main-navigation {
+            z-index: 100;
+            padding: 0;
+            clear: both;
+            display: block
+        }
+
+        .main-navigation a {
+            display: block;
+            text-decoration: none;
+            font-weight: 400;
+            text-transform: none;
+            font-size: 15px
+        }
+
+        .main-navigation ul {
+            list-style: none;
+            margin: 0;
+            padding-left: 0
+        }
+
+        .main-navigation .main-nav ul li a {
+            padding-left: 20px;
+            padding-right: 20px;
+            line-height: 60px
+        }
+
+        .inside-navigation {
+            position: relative
+        }
+
+        .main-navigation .inside-navigation {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between
+        }
+
+        .main-navigation .main-nav > ul {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center
+        }
+
+        .main-navigation li {
+            position: relative
+        }
+
+        .main-navigation .menu-bar-items {
+            display: flex;
+            align-items: center;
+            font-size: 15px
+        }
+
+        .main-navigation .menu-bar-items a {
+            color: inherit
+        }
+
+        .main-navigation .menu-bar-item {
+            position: relative
+        }
+
+        .main-navigation .menu-bar-item.search-item {
+            z-index: 20
+        }
+
+        .main-navigation .menu-bar-item > a {
+            padding-left: 20px;
+            padding-right: 20px;
+            line-height: 60px
+        }
+
+        .main-navigation ul ul {
+            display: block;
+            box-shadow: 1px 1px 0 rgba(0, 0, 0, .1);
+            float: left;
+            position: absolute;
+            left: -99999px;
+            opacity: 0;
+            z-index: 99999;
+            width: 200px;
+            text-align: left;
+            top: auto;
+            height: 0;
+            overflow: hidden
+        }
+
+        .main-navigation ul ul a {
+            display: block
+        }
+
+        .main-navigation ul ul li {
+            width: 100%
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            line-height: normal;
+            padding: 10px 20px;
+            font-size: 14px
+        }
+
+        .main-navigation .main-nav ul li.menu-item-has-children > a {
+            padding-right: 0;
+            position: relative
+        }
+
+        .nav-float-right .main-navigation ul ul ul {
+            top: 0
+        }
+
+        .menu-item-has-children .dropdown-menu-toggle {
+            display: inline-block;
+            height: 100%;
+            clear: both;
+            padding-right: 20px;
+            padding-left: 10px
+        }
+
+        .menu-item-has-children ul .dropdown-menu-toggle {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: -10px
+        }
+
+        nav ul ul .menu-item-has-children .dropdown-menu-toggle {
+            float: right
+        }
+
+        .paging-navigation .nav-previous {
+            display: none
+        }
+
+        .site-header {
+            position: relative
+        }
+
+        .inside-header {
+            padding: 20px 40px
+        }
+
+        .site-logo {
+            display: inline-block;
+            max-width: 100%
+        }
+
+        .site-header .header-image {
+            vertical-align: middle
+        }
+
+        .inside-header {
+            display: flex;
+            align-items: center
+        }
+
+        .nav-float-right #site-navigation {
+            margin-left: auto
+        }
+
+        .posted-on .updated {
+            display: none
+        }
+
+        .byline {
+            display: inline
+        }
+
+        .entry-summary:not(:first-child) {
+            margin-top: 2em
+        }
+
+        .entry-header, .site-content {
+            word-wrap: break-word
+        }
+
+        .entry-title {
+            margin-bottom: 0
+        }
+
+        .entry-meta {
+            font-size: 85%;
+            margin-top: .5em;
+            line-height: 1.5
+        }
+
+        .entry-summary > p:last-child {
+            margin-bottom: 0
+        }
+
+        .widget-area .widget {
+            padding: 40px
+        }
+
+        .sidebar .widget :last-child {
+            margin-bottom: 0
+        }
+
+        .widget-title {
+            margin-bottom: 30px;
+            font-size: 20px;
+            line-height: 1.5;
+            font-weight: 400;
+            text-transform: none
+        }
+
+        .widget ul {
+            margin: 0
+        }
+
+        .widget ul li {
+            list-style-type: none;
+            position: relative;
+            margin-bottom: .5em
+        }
+
+        .site-content {
+            display: flex
+        }
+
+        .grid-container {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1200px
+        }
+
+        .sidebar .widget, .site-main > * {
+            margin-bottom: 20px
+        }
+
+        .separate-containers .inside-article {
+            padding: 40px
+        }
+
+        .separate-containers .site-main {
+            margin: 20px
+        }
+
+        .separate-containers.right-sidebar .site-main {
+            margin-left: 0
+        }
+
+        .separate-containers .inside-right-sidebar {
+            margin-top: 20px;
+            margin-bottom: 20px
+        }
+
+        .post-image:not(:first-child) {
+            margin-top: 2em
+        }
+
+        .gp-icon {
+            display: inline-flex;
+            align-self: center
+        }
+
+        .gp-icon svg {
+            height: 1em;
+            width: 1em;
+            top: .125em;
+            position: relative;
+            fill: currentColor
+        }
+
+        .icon-menu-bars svg:nth-child(2), .icon-search svg:nth-child(2) {
+            display: none
+        }
+
+        .container.grid-container {
+            width: auto
+        }
+
+        .menu-toggle {
+            display: none
+        }
+
+        .menu-toggle {
+            padding: 0 20px;
+            line-height: 60px;
+            margin: 0;
+            font-weight: 400;
+            text-transform: none;
+            font-size: 15px
+        }
+
+        button.menu-toggle {
+            background-color: transparent;
+            flex-grow: 1;
+            border: 0;
+            text-align: center
+        }
+
+        .has-menu-bar-items button.menu-toggle {
+            flex-grow: 0
+        }
+
+        .mobile-menu-control-wrapper {
+            display: none;
+            margin-left: auto;
+            align-items: center
+        }
+
+        @media (max-width: 768px) {
+            .inside-header {
+                flex-direction: column;
+                text-align: center
+            }
+
+            .site-content {
+                flex-direction: column
+            }
+
+            .container .site-content .content-area {
+                width: auto
+            }
+
+            .is-right-sidebar.sidebar {
+                width: auto;
+                order: initial
+            }
+
+            #main {
+                margin-left: 0;
+                margin-right: 0
+            }
+
+            body:not(.no-sidebar) #main {
+                margin-bottom: 0
+            }
+
+            .alignleft {
+                float: none;
+                display: block;
+                margin-left: auto;
+                margin-right: auto
+            }
+
+            .entry-meta {
+                font-size: inherit
+            }
+
+            .entry-meta a {
+                line-height: 1.8em
+            }
+        }
+    }
+
+    @media all {
+        .slideout-navigation.main-navigation:not(.is-open):not(.slideout-transition) {
+            display: none
+        }
+
+        .slideout-overlay {
+            z-index: 100000;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            height: 100vh;
+            min-height: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, .8);
+            visibility: hidden;
+            opacity: 0
+        }
+
+        .slideout-overlay button.slideout-exit {
+            position: fixed;
+            top: 0;
+            background-color: transparent;
+            color: #fff;
+            font-size: 30px;
+            border: 0;
+            opacity: 0
+        }
+
+        .slideout-navigation .main-nav {
+            margin-bottom: 40px
+        }
+
+        .slideout-navigation:not(.do-overlay) .main-nav {
+            width: 100%;
+            box-sizing: border-box
+        }
+
+        .slideout-navigation .slideout-menu {
+            display: block
+        }
+
+        #generate-slideout-menu {
+            z-index: 100001
+        }
+
+        #generate-slideout-menu .slideout-menu li {
+            float: none;
+            width: 100%;
+            clear: both;
+            text-align: left
+        }
+
+        #generate-slideout-menu.main-navigation ul ul {
+            display: none
+        }
+
+        #generate-slideout-menu.main-navigation .main-nav ul ul {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%
+        }
+
+        .slideout-navigation .menu-item-has-children .dropdown-menu-toggle {
+            float: right
+        }
+
+        @media (max-width: 768px) {
+            .slideout-overlay button.slideout-exit {
+                font-size: 20px;
+                padding: 10px
+            }
+
+            .slideout-overlay {
+                top: -100px;
+                height: calc(100% + 100px);
+                height: calc(100vh + 100px);
+                min-height: calc(100% + 100px)
+            }
+        }
+    }
+
+    @media all {
+        .navigation-branding, .site-logo.mobile-header-logo {
+            display: flex;
+            align-items: center;
+            order: 0;
+            margin-right: 10px
+        }
+
+        .navigation-branding img, .site-logo.mobile-header-logo img {
+            position: relative;
+            padding: 10px 0;
+            display: block
+        }
+
+        .main-navigation.mobile-header-navigation {
+            display: none;
+            float: none;
+            margin-bottom: 0
+        }
+
+        .main-navigation .menu-toggle {
+            flex-grow: 1;
+            width: auto
+        }
+
+        .main-navigation.has-branding .menu-toggle {
+            flex-grow: 0;
+            padding-right: 20px;
+            order: 2
+        }
+
+        .main-navigation.has-sticky-branding:not(.has-branding):not(.navigation-stick) .navigation-branding {
+            display: none
+        }
+
+        .mobile-header-navigation.has-menu-bar-items .mobile-header-logo {
+            margin-right: auto
+        }
+    }</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
+    <title>Công Ty Thang Máy Gia Định - Lắp đặt, Bảo Trì Thang Máy</title>
+    <meta name="description"
+          content="Công ty thang máy Gia Định chuyên tư vấn, sản xuất, lắp đặt : thang máy mini, thay máy gia đình, tải hàng với hơn 17 năm kinh nghiệm hoạt động."/>
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+    <link rel="canonical" href="https://thangmaymini.com"/>
+    <meta property="og:locale" content="vi_VN"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Công Ty Thang Máy Gia Định - Lắp đặt, Bảo Trì Thang Máy"/>
+    <meta property="og:description"
+          content="Công ty thang máy Gia Định chuyên tư vấn, sản xuất, lắp đặt : thang máy mini, thay máy gia đình, tải hàng với hơn 17 năm kinh nghiệm hoạt động."/>
+    <meta property="og:url" content="https://thangmaymini.com"/>
+    <meta property="og:site_name" content="Thang máy Gia Định"/>
+    <meta property="og:updated_time" content="2024-05-30T17:21:27+07:00"/>
+    <meta property="og:image"
+          content="https://thangmaymini.com/wp-content/uploads/2021/12/anh-gioi-an-duong-vuong-tay-ho-1.jpg"/>
+    <meta property="og:image:secure_url"
+          content="https://thangmaymini.com/wp-content/uploads/2021/12/anh-gioi-an-duong-vuong-tay-ho-1.jpg"/>
+    <meta property="og:image:width" content="1446"/>
+    <meta property="og:image:height" content="1926"/>
+    <meta property="og:image:alt" content="Thang máy gia đình anh Giới (Tây Hồ, Hà Nội)"/>
+    <meta property="og:image:type" content="image/jpeg"/>
+    <meta property="article:published_time" content="2018-02-16T19:48:32+07:00"/>
+    <meta property="article:modified_time" content="2024-05-30T17:21:27+07:00"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Công Ty Thang Máy Gia Định - Lắp đặt, Bảo Trì Thang Máy"/>
+    <meta name="twitter:description"
+          content="Công ty thang máy Gia Định chuyên tư vấn, sản xuất, lắp đặt : thang máy mini, thay máy gia đình, tải hàng với hơn 17 năm kinh nghiệm hoạt động."/>
+    <meta name="twitter:image"
+          content="https://thangmaymini.com/wp-content/uploads/2021/12/anh-gioi-an-duong-vuong-tay-ho-1.jpg"/>
+    <meta name="twitter:label1" content="Written by"/>
+    <meta name="twitter:data1" content="Cao Tú"/>
+    <meta name="twitter:label2" content="Time to read"/>
+    <meta name="twitter:data2" content="2 minutes"/>
+    <script data-jetpack-boost="ignore" type="application/ld+json" class="rank-math-schema">{
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Place",
+                "@id": "https://thangmaymini.com/#place",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "T\u1ea7ng 3 - T\u00f2a A - s\u1ed1 21, L\u00ea \u0110\u1ee9c Th\u1ecd - Nam T\u1eeb Li\u00eam",
+                    "addressRegion": "H\u00e0 N\u1ed9i",
+                    "postalCode": "10000",
+                    "addressCountry": "Vietnam"
+                }
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://thangmaymini.com/#organization",
+                "name": "C\u00f4ng ty TNHH Thang M\u00e1y Gia \u0110\u1ecbnh",
+                "url": "https://thangmaymini.com",
+                "sameAs": [
+                    "https://www.facebook.com/thangmaygiadinhhn/"
+                ],
+                "email": "giadinh.homelift@gmail.com",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "T\u1ea7ng 3 - T\u00f2a A - s\u1ed1 21, L\u00ea \u0110\u1ee9c Th\u1ecd - Nam T\u1eeb Li\u00eam",
+                    "addressRegion": "H\u00e0 N\u1ed9i",
+                    "postalCode": "10000",
+                    "addressCountry": "Vietnam"
+                },
+                "logo": {
+                    "@type": "ImageObject",
+                    "@id": "https://thangmaymini.com/#logo",
+                    "url": "https://thangmaymini.com/wp-content/uploads/2021/08/logo-thang-may-mini-1.png",
+                    "contentUrl": "https://thangmaymini.com/wp-content/uploads/2021/08/logo-thang-may-mini-1.png",
+                    "caption": "Thang m\u00e1y Gia \u0110\u1ecbnh",
+                    "inLanguage": "vi",
+                    "width": "392",
+                    "height": "53"
+                },
+                "contactPoint": [
+                    {
+                        "@type": "ContactPoint",
+                        "telephone": "+84-974558223",
+                        "contactType": "customer support"
+                    }
+                ],
+                "location": {
+                    "@id": "https://thangmaymini.com/#place"
+                }
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://thangmaymini.com/#website",
+                "url": "https://thangmaymini.com",
+                "name": "Thang m\u00e1y Gia \u0110\u1ecbnh",
+                "alternateName": "C\u00f4ng ty Thang M\u00e1y Gia \u0110\u1ecbnh",
+                "publisher": {
+                    "@id": "https://thangmaymini.com/#organization"
+                },
+                "inLanguage": "vi",
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "https://thangmaymini.com/?s={search_term_string}",
+                    "query-input": "required name=search_term_string"
+                }
+            },
+            {
+                "@type": "ImageObject",
+                "@id": "https://thangmaymini.com/wp-content/uploads/elementor/thumbs/thang-may-gia-dinh-q3xdn3om84jy2zxkgwenvpnrnnfatxixg4b4nreg3k.jpg",
+                "url": "https://thangmaymini.com/wp-content/uploads/elementor/thumbs/thang-may-gia-dinh-q3xdn3om84jy2zxkgwenvpnrnnfatxixg4b4nreg3k.jpg",
+                "width": "200",
+                "height": "200",
+                "inLanguage": "vi"
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://thangmaymini.com#webpage",
+                "url": "https://thangmaymini.com",
+                "name": "C\u00f4ng Ty Thang M\u00e1y Gia \u0110\u1ecbnh - L\u1eafp \u0111\u1eb7t, B\u1ea3o Tr\u00ec Thang M\u00e1y",
+                "datePublished": "2018-02-16T19:48:32+07:00",
+                "dateModified": "2024-05-30T17:21:27+07:00",
+                "about": {
+                    "@id": "https://thangmaymini.com/#organization"
+                },
+                "isPartOf": {
+                    "@id": "https://thangmaymini.com/#website"
+                },
+                "primaryImageOfPage": {
+                    "@id": "https://thangmaymini.com/wp-content/uploads/elementor/thumbs/thang-may-gia-dinh-q3xdn3om84jy2zxkgwenvpnrnnfatxixg4b4nreg3k.jpg"
+                },
+                "inLanguage": "vi"
+            },
+            {
+                "@type": "Person",
+                "@id": "https://thangmaymini.com/author/tucao",
+                "name": "Cao T\u00fa",
+                "url": "https://thangmaymini.com/author/tucao",
+                "image": {
+                    "@type": "ImageObject",
+                    "@id": "https://secure.gravatar.com/avatar/66d6f8ffcc4347e48f20b2a4d2b0e2d4?s=96&amp;d=identicon&amp;r=g",
+                    "url": "https://secure.gravatar.com/avatar/66d6f8ffcc4347e48f20b2a4d2b0e2d4?s=96&amp;d=identicon&amp;r=g",
+                    "caption": "Cao T\u00fa",
+                    "inLanguage": "vi"
+                },
+                "worksFor": {
+                    "@id": "https://thangmaymini.com/#organization"
+                }
+            },
+            {
+                "@type": "Article",
+                "headline": "C\u00f4ng Ty Thang M\u00e1y Gia \u0110\u1ecbnh - L\u1eafp \u0111\u1eb7t, B\u1ea3o Tr\u00ec Thang M\u00e1y",
+                "keywords": "c\u00f4ng ty thang m\u00e1y gia \u0111\u1ecbnh",
+                "datePublished": "2018-02-16T19:48:32+07:00",
+                "dateModified": "2024-05-30T17:21:27+07:00",
+                "author": {
+                    "@id": "https://thangmaymini.com/author/tucao",
+                    "name": "Cao T\u00fa"
+                },
+                "publisher": {
+                    "@id": "https://thangmaymini.com/#organization"
+                },
+                "description": "C\u00f4ng ty thang m\u00e1y Gia \u0110\u1ecbnh chuy\u00ean t\u01b0 v\u1ea5n, s\u1ea3n xu\u1ea5t, l\u1eafp \u0111\u1eb7t : thang m\u00e1y mini, thay m\u00e1y gia \u0111\u00ecnh, t\u1ea3i h\u00e0ng v\u1edbi h\u01a1n 17 n\u0103m kinh nghi\u1ec7m ho\u1ea1t \u0111\u1ed9ng.",
+                "name": "C\u00f4ng Ty Thang M\u00e1y Gia \u0110\u1ecbnh - L\u1eafp \u0111\u1eb7t, B\u1ea3o Tr\u00ec Thang M\u00e1y",
+                "@id": "https://thangmaymini.com#richSnippet",
+                "isPartOf": {
+                    "@id": "https://thangmaymini.com#webpage"
+                },
+                "image": {
+                    "@id": "https://thangmaymini.com/wp-content/uploads/elementor/thumbs/thang-may-gia-dinh-q3xdn3om84jy2zxkgwenvpnrnnfatxixg4b4nreg3k.jpg"
+                },
+                "inLanguage": "vi",
+                "mainEntityOfPage": {
+                    "@id": "https://thangmaymini.com#webpage"
+                }
+            }
+        ]
+    }</script>
+    <meta name="google-site-verification" content="google3e75bbd4b0d8f039"/>
+    <meta name="msvalidate.01" content="7AD333380495D3A06A22B49565096663"/>
+    <meta name="yandex-verification" content="62930e1fc12358c9"/>
+    <!-- /Rank Math WordPress SEO plugin -->
+
+    <link rel="alternate" type="application/rss+xml" title="Dòng thông tin Thang máy Gia Định &raquo;"
+          href="https://thangmaymini.com/feed"/>
+    <link rel="alternate" type="application/rss+xml" title="Dòng phản hồi Thang máy Gia Định &raquo;"
+          href="https://thangmaymini.com/comments/feed"/>
+
+    <link rel='stylesheet' id='kk-star-ratings-css'
+          href='https://thangmaymini.com/wp-content/plugins/kk-star-ratings/src/core/public/css/kk-star-ratings.min.css?ver=5.4.7'
+          media="not all" data-media="all"
+          onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
+    <link rel='stylesheet' id='generate-widget-areas-css'
+          href='https://thangmaymini.com/wp-content/themes/generatepress/assets/css/components/widget-areas.min.css?ver=3.3.1'
+          media="not all" data-media="all"
+          onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
+    <link rel='stylesheet' id='generate-style-css'
+          href='https://thangmaymini.com/wp-content/themes/generatepress/assets/css/main.min.css?ver=3.3.1'
+          media="not all" data-media="all"
+          onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel='stylesheet' id='elementor-icons-css'
+          href="{{ url_for('static', filename='wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css') }}"
+          media="not all" data-media="all"
+          onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
+    <link rel='stylesheet' id='elementor-frontend-css'
+          href='https://thangmaymini.com/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.20.2'
+          media="not all" data-media="all"
+          onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
+    <link rel='stylesheet' id='swiper-css'
+          href='https://thangmaymini.com/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5'
+          media="not all" data-media="all"
+          onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
+    <link rel='stylesheet' id='elementor-post-13993-css'
+          href='https://thangmaymini.com/wp-content/uploads/elementor/css/post-13993.css?ver=1709695851' media="not all"
+          data-media="all"
+          onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
+    <link rel='stylesheet' id='elementor-global-css'
+          href='https://thangmaymini.com/wp-content/uploads/elementor/css/global.css?ver=1709695852' media="not all"
+          data-media="all"
+          onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
+    <link rel='stylesheet' id='elementor-post-7-css'
+          href='https://thangmaymini.com/wp-content/uploads/elementor/css/post-7.css?ver=1717065129' media="not all"
+          data-media="all"
+          onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
+    <link rel='stylesheet' id='generate-offside-css'
+          href='https://thangmaymini.com/wp-content/plugins/gp-premium/menu-plus/functions/css/offside.min.css?ver=2.3.1'
+          media="not all" data-media="all"
+          onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
+    <link rel='stylesheet' id='generate-navigation-branding-css'
+          href='https://thangmaymini.com/wp-content/plugins/gp-premium/menu-plus/functions/css/navigation-branding-flex.min.css?ver=2.3.1'
+          media="not all" data-media="all"
+          onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
+
+    <link rel='stylesheet' id='elementor-icons-shared-0-css'
+          href='https://thangmaymini.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3'
+          media="not all" data-media="all"
+          onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
+    <link rel='stylesheet' id='elementor-icons-fa-solid-css'
+          href='https://thangmaymini.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3'
+          media="not all" data-media="all"
+          onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
+    <meta name="generator"
+          content="Elementor 3.20.2; features: e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints, block_editor_assets_optimize, e_image_loading_optimization; settings: css_print_method-external, google_font-enabled, font_display-swap">
+    <link rel="icon"
+          href="https://thangmaymini.com/wp-content/uploads/2024/05/cropped-cropped-1660760acd536d0d3442-32x32.jpg"
+          sizes="32x32"/>
+    <link rel="icon"
+          href="https://thangmaymini.com/wp-content/uploads/2024/05/cropped-cropped-1660760acd536d0d3442-192x192.jpg"
+          sizes="192x192"/>
+    <link rel="apple-touch-icon"
+          href="https://thangmaymini.com/wp-content/uploads/2024/05/cropped-cropped-1660760acd536d0d3442-180x180.jpg"/>
+    <meta name="msapplication-TileImage"
+          content="https://thangmaymini.com/wp-content/uploads/2024/05/cropped-cropped-1660760acd536d0d3442-270x270.jpg"/>
+</head>
+
+<body data-rsssl=1
+      class="home page-template-default page page-id-7 wp-custom-logo wp-embed-responsive slideout-enabled slideout-mobile sticky-menu-fade sticky-enabled both-sticky-menu mobile-header mobile-header-logo mobile-header-sticky no-sidebar nav-float-right separate-containers nav-search-enabled header-aligned-left dropdown-hover elementor-default elementor-kit-13993 elementor-page elementor-page-7"
+      itemtype="https://schema.org/WebPage" itemscope>
+<a class="screen-reader-text skip-link" href="#content" title="Chuyển đến nội dung">Chuyển đến nội dung</a>
+<header class="site-header has-inline-mobile-toggle" id="masthead" aria-label="Trang"
+        itemtype="https://schema.org/WPHeader" itemscope>
+    <div class="inside-header grid-container">
+        <div class="site-logo">
+            <a href="https://thangmaymini.com/" rel="home">
+                <img fetchpriority="high" class="header-image is-logo-image" alt="Thang máy Gia Định"
+                     src="https://thangmaymini.com/wp-content/uploads/2024/05/cropped-1660760acd536d0d3442.jpg"
+                     srcset="https://thangmaymini.com/wp-content/uploads/2024/05/cropped-1660760acd536d0d3442.jpg 1x, https://thangmaymini.com/wp-content/uploads/2024/05/cropped-1660760acd536d0d3442.jpg 2x"
+                     width="1280" height="1173"/>
+            </a>
+        </div>
+        <nav class="main-navigation mobile-menu-control-wrapper" id="mobile-menu-control-wrapper"
+             aria-label="Bật tắt mobile">
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Mở mục tìm kiếm"
+                                                                                   href="#"><span
+                    class="gp-icon icon-search"><svg viewBox="0 0 512 512" aria-hidden="true"
+                                                     xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path
+                    fill-rule="evenodd" clip-rule="evenodd"
+                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z"/></svg><svg
+                    viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em"
+                    height="1em"><path
+                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z"/></svg></span></a></span>
+            </div>
+            <button data-nav="site-navigation" class="menu-toggle" aria-controls="generate-slideout-menu"
+                    aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                                                          xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path
+                        d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z"/></svg><svg
+                        viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em"
+                        height="1em"><path
+                        d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z"/></svg></span><span
+                    class="screen-reader-text">Menu</span></button>
+        </nav>
+        <nav class="auto-hide-sticky has-sticky-branding main-navigation has-menu-bar-items sub-menu-right"
+             id="site-navigation" aria-label="Chính" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+            <div class="inside-navigation grid-container">
+                <div class="navigation-branding">
+                    <div class="sticky-navigation-logo">
+                        <a href="https://thangmaymini.com/" title="Thang máy Gia Định" rel="home">
+                            <img src="https://thangmaymini.com/wp-content/uploads/2021/06/logo-thang-may-gia-dinh.png"
+                                 class="is-logo-image" alt="Thang máy Gia Định" width="91" height="53"/>
+                        </a>
+                    </div>
+                </div>
+                <form method="get" class="search-form navigation-search" action="https://thangmaymini.com/">
+                    <input type="search" class="search-field" value="" name="s" title="Tìm kiếm"/>
+                </form>
+                <button class="menu-toggle" aria-controls="generate-slideout-menu" aria-expanded="false">
+                    <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                                                              xmlns="http://www.w3.org/2000/svg" width="1em"
+                                                              height="1em"><path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z"/></svg><svg
+                            viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em"
+                            height="1em"><path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z"/></svg></span><span
+                        class="screen-reader-text">Menu</span></button>
+                <div id="primary-menu" class="main-nav">
+                    <ul id="menu-main-menu" class=" menu sf-menu">
+                        <li id="menu-item-15987"
+                            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-15987">
+                            <a href="https://thangmaymini.com" aria-current="page">Trang Chủ</a></li>
+                        <li id="menu-item-14201"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14201">
+                            <a>Thang máy<span role="presentation" class="dropdown-menu-toggle"><span
+                                    class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true"
+                                                                    xmlns="http://www.w3.org/2000/svg" width="1em"
+                                                                    height="1em"><path
+                                    d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z"/></svg></span></span></a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-15180"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15180"><a
+                                        href="https://thangmaymini.com/thang-may-gia-dinh">Thang Máy Gia Đình</a></li>
+                                <li id="menu-item-7174"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7174"><a
+                                        title="Thang máy mini" href="https://thangmaymini.com/thang-may-mini">Thang Máy
+                                    Mini</a></li>
+                                <li id="menu-item-13840"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13840"><a
+                                        href="https://thangmaymini.com/thang-may-mitsubishi-gia-dinh">Thang Máy
+                                    Mitsubishi</a></li>
+                                <li id="menu-item-7280"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7280"><a
+                                        title="Thang máy Fuji" href="https://thangmaymini.com/thang-may-fuji-gia-dinh">Thang
+                                    Máy Fuji</a></li>
+                                <li id="menu-item-7284"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7284"><a
+                                        title="Thang máy tải hàng hóa "
+                                        href="https://thangmaymini.com/thang-may-tai-hang-hoa">Thang Máy Tải Hàng</a>
+                                </li>
+                                <li id="menu-item-14819"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14819"><a
+                                        href="https://thangmaymini.com/cau-tao-thang-may-khong-phong-may.html">Thang Máy
+                                    Không Phòng Máy</a></li>
+                                <li id="menu-item-7274"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7274">
+                                    <a title="Phân loại thang máy theo tải trọng" href="#">Theo tải trọng<span
+                                            role="presentation" class="dropdown-menu-toggle"><span
+                                            class="gp-icon icon-arrow-right"><svg viewBox="0 0 192 512"
+                                                                                  aria-hidden="true"
+                                                                                  xmlns="http://www.w3.org/2000/svg"
+                                                                                  width="1em" height="1em"
+                                                                                  fill-rule="evenodd"
+                                                                                  clip-rule="evenodd"
+                                                                                  stroke-linejoin="round"
+                                                                                  stroke-miterlimit="1.414"><path
+                                            d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z"
+                                            fill-rule="nonzero"/></svg></span></span></a>
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-11061"
+                                            class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11061">
+                                            <a title="Thang máy 200kg"
+                                               href="https://thangmaymini.com/thang-may-mini-danh-cho-gia-dinh-tai-trong-tu-200kg-350kg.html">Thang
+                                                máy 200kg</a></li>
+                                        <li id="menu-item-14469"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14469">
+                                            <a href="https://thangmaymini.com/thang-may-mini-danh-cho-gia-dinh-tai-trong-tu-200kg-350kg.html">Thang
+                                                máy 350kg</a></li>
+                                        <li id="menu-item-7275"
+                                            class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7275">
+                                            <a title="Thang máy 450kg"
+                                               href="https://thangmaymini.com/thang-may-450kg.html">Thang máy 450kg</a>
+                                        </li>
+                                        <li id="menu-item-14470"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14470">
+                                            <a href="https://thangmaymini.com/loai-thang-may-trong-tai-550kg-su-dung-cho-gia-dinh-van-phong.html">Thang
+                                                máy 550kg</a></li>
+                                        <li id="menu-item-7278"
+                                            class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7278">
+                                            <a title="Thang máy 750kg "
+                                               href="https://thangmaymini.com/thang-may-750kg.html">Thang máy 750kg</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-5032"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5032">
+                            <a title="Giới thiệu thang máy Gia Định"
+                               href="https://thangmaymini.com/gioi-thieu-ve-cong-ty-thang-may-gia-dinh">Về chúng
+                                tôi<span role="presentation" class="dropdown-menu-toggle"><span
+                                        class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true"
+                                                                        xmlns="http://www.w3.org/2000/svg" width="1em"
+                                                                        height="1em"><path
+                                        d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z"/></svg></span></span></a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-16959"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16959"><a
+                                        title="Giới thiệu thang máy Gia Định"
+                                        href="https://thangmaymini.com/gioi-thieu-ve-cong-ty-thang-may-gia-dinh">Giới
+                                    thiệu</a></li>
+                                <li id="menu-item-2765"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2765"><a
+                                        title="Liên hệ " href="https://thangmaymini.com/lien-he">Liên hệ</a></li>
+                                <li id="menu-item-5565"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5565"><a
+                                        title="Catalogue thang máy Gia Định" href="https://thangmaymini.com/catalogue">Hồ
+                                    sơ công ty</a></li>
+                                <li id="menu-item-14512"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14512"><a
+                                        title="Dự án đã thi công" href="https://thangmaymini.com/du-an">Dự án đã thực
+                                    hiện</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-16324"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-16324">
+                            <a href="https://thangmaymini.com/tu-van-lua-chon-thang-may">Tư vấn lựa chọn<span
+                                    role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg
+                                    viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    width="1em" height="1em"><path
+                                    d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z"/></svg></span></span></a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-16325"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16325">
+                                    <a href="https://thangmaymini.com/ban-ve-ky-thuat-thang-may">Bản vẽ kỹ thuật</a>
+                                </li>
+                                <li id="menu-item-16326"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16326">
+                                    <a href="https://thangmaymini.com/bao-hanh-bao-duong-thang-may">Bảo hành &amp; bảo
+                                        dưỡng</a></li>
+                                <li id="menu-item-16327"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16327">
+                                    <a href="https://thangmaymini.com/loi-thuong-gap-va-sua-chua">Lỗi thường gặp và sửa
+                                        chữa</a></li>
+                                <li id="menu-item-16328"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16328">
+                                    <a href="https://thangmaymini.com/mau-thang-may">Mẫu thang máy</a></li>
+                                <li id="menu-item-16329"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16329">
+                                    <a href="https://thangmaymini.com/chia-se-kinh-nghiem">Mẹo vặt và lưu ý</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Mở mục tìm kiếm"
+                                                                                       href="#"><span
+                        class="gp-icon icon-search"><svg viewBox="0 0 512 512" aria-hidden="true"
+                                                         xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path
+                        fill-rule="evenodd" clip-rule="evenodd"
+                        d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z"/></svg><svg
+                        viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em"
+                        height="1em"><path
+                        d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z"/></svg></span></a></span>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<nav id="mobile-header" data-auto-hide-sticky itemtype="https://schema.org/SiteNavigationElement" itemscope
+     class="main-navigation mobile-header-navigation has-branding has-sticky-branding has-menu-bar-items">
+    <div class="inside-navigation grid-container grid-parent">
+        <form method="get" class="search-form navigation-search" action="https://thangmaymini.com/">
+            <input type="search" class="search-field" value="" name="s" title="Tìm kiếm"/>
+        </form>
+        <div class="site-logo mobile-header-logo">
+            <a href="https://thangmaymini.com/" title="Thang máy Gia Định" rel="home">
+                <img src="https://thangmaymini.com/wp-content/uploads/2021/08/mb-logo.png" alt="Thang máy Gia Định"
+                     class="is-logo-image" width="150" height="45"/>
+            </a>
+        </div>
+        <button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                                                      xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path
+                    d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z"/></svg><svg
+                    viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em"
+                    height="1em"><path
+                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z"/></svg></span><span
+                class="screen-reader-text">Menu</span></button>
+        <div id="mobile-menu" class="main-nav">
+            <ul id="menu-main-menu-1" class=" menu sf-menu">
+                <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-15987">
+                    <a href="https://thangmaymini.com" aria-current="page">Trang Chủ</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14201">
+                    <a>Thang máy<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg
+                            viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em"
+                            height="1em"><path
+                            d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z"/></svg></span></span></a>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15180"><a
+                                href="https://thangmaymini.com/thang-may-gia-dinh">Thang Máy Gia Đình</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7174"><a
+                                title="Thang máy mini" href="https://thangmaymini.com/thang-may-mini">Thang Máy Mini</a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13840"><a
+                                href="https://thangmaymini.com/thang-may-mitsubishi-gia-dinh">Thang Máy Mitsubishi</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7280"><a
+                                title="Thang máy Fuji" href="https://thangmaymini.com/thang-may-fuji-gia-dinh">Thang Máy
+                            Fuji</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7284"><a
+                                title="Thang máy tải hàng hóa " href="https://thangmaymini.com/thang-may-tai-hang-hoa">Thang
+                            Máy Tải Hàng</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14819"><a
+                                href="https://thangmaymini.com/cau-tao-thang-may-khong-phong-may.html">Thang Máy Không
+                            Phòng Máy</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7274">
+                            <a title="Phân loại thang máy theo tải trọng" href="#">Theo tải trọng<span
+                                    role="presentation" class="dropdown-menu-toggle"><span
+                                    class="gp-icon icon-arrow-right"><svg viewBox="0 0 192 512" aria-hidden="true"
+                                                                          xmlns="http://www.w3.org/2000/svg" width="1em"
+                                                                          height="1em" fill-rule="evenodd"
+                                                                          clip-rule="evenodd" stroke-linejoin="round"
+                                                                          stroke-miterlimit="1.414"><path
+                                    d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z"
+                                    fill-rule="nonzero"/></svg></span></span></a>
+                            <ul class="sub-menu">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11061"><a
+                                        title="Thang máy 200kg"
+                                        href="https://thangmaymini.com/thang-may-mini-danh-cho-gia-dinh-tai-trong-tu-200kg-350kg.html">Thang
+                                    máy 200kg</a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14469"><a
+                                        href="https://thangmaymini.com/thang-may-mini-danh-cho-gia-dinh-tai-trong-tu-200kg-350kg.html">Thang
+                                    máy 350kg</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7275"><a
+                                        title="Thang máy 450kg" href="https://thangmaymini.com/thang-may-450kg.html">Thang
+                                    máy 450kg</a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14470"><a
+                                        href="https://thangmaymini.com/loai-thang-may-trong-tai-550kg-su-dung-cho-gia-dinh-van-phong.html">Thang
+                                    máy 550kg</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7278"><a
+                                        title="Thang máy 750kg " href="https://thangmaymini.com/thang-may-750kg.html">Thang
+                                    máy 750kg</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5032">
+                    <a title="Giới thiệu thang máy Gia Định"
+                       href="https://thangmaymini.com/gioi-thieu-ve-cong-ty-thang-may-gia-dinh">Về chúng tôi<span
+                            role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg
+                            viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em"
+                            height="1em"><path
+                            d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z"/></svg></span></span></a>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16959"><a
+                                title="Giới thiệu thang máy Gia Định"
+                                href="https://thangmaymini.com/gioi-thieu-ve-cong-ty-thang-may-gia-dinh">Giới thiệu</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2765"><a
+                                title="Liên hệ " href="https://thangmaymini.com/lien-he">Liên hệ</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5565"><a
+                                title="Catalogue thang máy Gia Định" href="https://thangmaymini.com/catalogue">Hồ sơ
+                            công ty</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14512"><a
+                                title="Dự án đã thi công" href="https://thangmaymini.com/du-an">Dự án đã thực hiện</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-16324">
+                    <a href="https://thangmaymini.com/tu-van-lua-chon-thang-may">Tư vấn lựa chọn<span
+                            role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg
+                            viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em"
+                            height="1em"><path
+                            d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z"/></svg></span></span></a>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16325"><a
+                                href="https://thangmaymini.com/ban-ve-ky-thuat-thang-may">Bản vẽ kỹ thuật</a></li>
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16326"><a
+                                href="https://thangmaymini.com/bao-hanh-bao-duong-thang-may">Bảo hành &amp; bảo
+                            dưỡng</a></li>
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16327"><a
+                                href="https://thangmaymini.com/loi-thuong-gap-va-sua-chua">Lỗi thường gặp và sửa
+                            chữa</a></li>
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16328"><a
+                                href="https://thangmaymini.com/mau-thang-may">Mẫu thang máy</a></li>
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16329"><a
+                                href="https://thangmaymini.com/chia-se-kinh-nghiem">Mẹo vặt và lưu ý</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Mở mục tìm kiếm"
+                                                                               href="#"><span
+                class="gp-icon icon-search"><svg viewBox="0 0 512 512" aria-hidden="true"
+                                                 xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path
+                fill-rule="evenodd" clip-rule="evenodd"
+                d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z"/></svg><svg
+                viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path
+                d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z"/></svg></span></a></span>
+        </div>
+    </div><!-- .inside-navigation -->
+</nav><!-- #site-navigation -->
+<div class="page-hero">
+    <div class="inside-page-hero grid-container grid-parent">
+        <h1 class="hero-title">Công Ty Thang Máy Gia Định</h1>
+        <h2>Hơn 15 năm thiết kế, sản xuất, lắp đặt thang máy chuyên nghiệp</h2>
+    </div>
 </div>
-{#{% endblock %}#}
+<div class="site grid-container container hfeed" id="page">
+    <div class="site-content" id="content">
+
+        <div class="content-area" id="primary">
+            <main class="site-main" id="main">
+
+                <article id="post-7" class="post-7 page type-page status-publish"
+                         itemtype="https://schema.org/CreativeWork" itemscope>
+                    <div class="inside-article">
+
+                        <div class="entry-content" itemprop="text">
+                            <div data-elementor-type="wp-page" data-elementor-id="7" class="elementor elementor-7">
+                                <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-300a0bf elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="300a0bf" data-element_type="section">
+                                    <div class="elementor-container elementor-column-gap-default">
+                                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-77b9364"
+                                             data-id="77b9364" data-element_type="column">
+                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                <div class="elementor-element elementor-element-e1720b4 elementor-widget elementor-widget-heading"
+                                                     data-id="e1720b4" data-element_type="widget"
+                                                     data-widget_type="heading.default">
+                                                    <div class="elementor-widget-container">
+                                                        <style>/*! elementor - v3.20.0 - 20-03-2024 */
+                                                        .elementor-heading-title {
+                                                            padding: 0;
+                                                            margin: 0;
+                                                            line-height: 1
+                                                        }
+
+                                                        .elementor-widget-heading .elementor-heading-title[class*=elementor-size-] > a {
+                                                            color: inherit;
+                                                            font-size: inherit;
+                                                            line-height: inherit
+                                                        }
+
+                                                        .elementor-widget-heading .elementor-heading-title.elementor-size-small {
+                                                            font-size: 15px
+                                                        }
+
+                                                        .elementor-widget-heading .elementor-heading-title.elementor-size-medium {
+                                                            font-size: 19px
+                                                        }
+
+                                                        .elementor-widget-heading .elementor-heading-title.elementor-size-large {
+                                                            font-size: 29px
+                                                        }
+
+                                                        .elementor-widget-heading .elementor-heading-title.elementor-size-xl {
+                                                            font-size: 39px
+                                                        }
+
+                                                        .elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
+                                                            font-size: 59px
+                                                        }</style>
+                                                        <h2 class="elementor-heading-title elementor-size-default">Sản
+                                                            phẩm của chúng tôi</h2></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-be05526 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                                        data-id="be05526" data-element_type="section">
+                                    <div class="elementor-container elementor-column-gap-default">
+                                        <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-f2910ad"
+                                             data-id="f2910ad" data-element_type="column">
+                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                <div class="elementor-element elementor-element-c4dc78d elementor-widget elementor-widget-image"
+                                                     data-id="c4dc78d" data-element_type="widget"
+                                                     data-widget_type="image.default">
+                                                    <div class="elementor-widget-container">
+                                                        <style>/*! elementor - v3.20.0 - 20-03-2024 */
+                                                        .elementor-widget-image {
+                                                            text-align: center
+                                                        }
+
+                                                        .elementor-widget-image a {
+                                                            display: inline-block
+                                                        }
+
+                                                        .elementor-widget-image a img[src$=".svg"] {
+                                                            width: 48px
+                                                        }
+
+                                                        .elementor-widget-image img {
+                                                            vertical-align: middle;
+                                                            display: inline-block
+                                                        }</style>
+                                                        <a href="https://thangmaymini.com/thang-may-gia-dinh">
+                                                            <img decoding="async"
+                                                                 src="https://thangmaymini.com/wp-content/uploads/elementor/thumbs/thang-may-gia-dinh-q3xdn3om84jy2zxkgwenvpnrnnfatxixg4b4s85k66.jpg"
+                                                                 title="Thang máy gia đình" alt="Thang máy gia đình"
+                                                                 loading="lazy"/> </a>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-7ec5607 elementor-widget elementor-widget-heading"
+                                                     data-id="7ec5607" data-element_type="widget"
+                                                     data-widget_type="heading.default">
+                                                    <div class="elementor-widget-container">
+                                                        <h4 class="elementor-heading-title elementor-size-default"><a
+                                                                href="https://thangmaymini.com/thang-may-gia-dinh">Thang
+                                                            máy gia đình</a></h4></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-572db43"
+                                             data-id="572db43" data-element_type="column">
+                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                <div class="elementor-element elementor-element-73455b9 elementor-widget elementor-widget-image"
+                                                     data-id="73455b9" data-element_type="widget"
+                                                     data-widget_type="image.default">
+                                                    <div class="elementor-widget-container">
+                                                        <a href="https://thangmaymini.com/thang-may-mini">
+                                                            <img loading="lazy" decoding="async" width="265"
+                                                                 height="355"
+                                                                 src="https://thangmaymini.com/wp-content/uploads/2023/03/thang-may-mini.jpg"
+                                                                 class="attachment-large size-large wp-image-16726"
+                                                                 alt="Thang máy mini"
+                                                                 srcset="https://thangmaymini.com/wp-content/uploads/2023/03/thang-may-mini.jpg 265w, https://thangmaymini.com/wp-content/uploads/2023/03/thang-may-mini-187x250.jpg 187w"
+                                                                 sizes="(max-width: 265px) 100vw, 265px" title="Home 1">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-80c559f elementor-widget elementor-widget-heading"
+                                                     data-id="80c559f" data-element_type="widget"
+                                                     data-widget_type="heading.default">
+                                                    <div class="elementor-widget-container">
+                                                        <h4 class="elementor-heading-title elementor-size-default"><a
+                                                                href="https://thangmaymini.com/thang-may-mini">Thang máy
+                                                            mini</a></h4></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-339cb72"
+                                             data-id="339cb72" data-element_type="column">
+                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                <div class="elementor-element elementor-element-9191e27 elementor-widget elementor-widget-image"
+                                                     data-id="9191e27" data-element_type="widget"
+                                                     data-widget_type="image.default">
+                                                    <div class="elementor-widget-container">
+                                                        <a href="https://thangmaymini.com/thang-may-mitsubishi-gia-dinh">
+                                                            <img decoding="async"
+                                                                 src="https://thangmaymini.com/wp-content/uploads/elementor/thumbs/thang-may-mitsubishi-1-1-q3xdt044vwvkql73zvsltfg9s16rocpcxnxef2m4wu.jpg"
+                                                                 title="Thang máy mitsubishi" alt="Thang máy mitsubishi"
+                                                                 loading="lazy"/> </a>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-8c460c6 elementor-widget elementor-widget-heading"
+                                                     data-id="8c460c6" data-element_type="widget"
+                                                     data-widget_type="heading.default">
+                                                    <div class="elementor-widget-container">
+                                                        <h4 class="elementor-heading-title elementor-size-default"><a
+                                                                href="https://thangmaymini.com/thang-may-mitsubishi-gia-dinh">Thang
+                                                            máy Mitsubishi</a></h4></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-a05cfa5 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                                        data-id="a05cfa5" data-element_type="section">
+                                    <div class="elementor-container elementor-column-gap-default">
+                                        <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-e10d404"
+                                             data-id="e10d404" data-element_type="column">
+                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                <div class="elementor-element elementor-element-8587d7d elementor-widget elementor-widget-image"
+                                                     data-id="8587d7d" data-element_type="widget"
+                                                     data-widget_type="image.default">
+                                                    <div class="elementor-widget-container">
+                                                        <a href="https://thangmaymini.com/thang-may-fuji-gia-dinh">
+                                                            <img decoding="async"
+                                                                 src="https://thangmaymini.com/wp-content/uploads/elementor/thumbs/thang-may-fuji-q3xdn2qs1ainrdyxme01b7wb29jxm8f73znnay6yce.jpg"
+                                                                 title="Thang máy Fuji" alt="Thang máy Fuji"
+                                                                 loading="lazy"/> </a>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-f7b56f8 elementor-widget elementor-widget-heading"
+                                                     data-id="f7b56f8" data-element_type="widget"
+                                                     data-widget_type="heading.default">
+                                                    <div class="elementor-widget-container">
+                                                        <h4 class="elementor-heading-title elementor-size-default"><a
+                                                                href="https://thangmaymini.com/thang-may-fuji-gia-dinh">Thang
+                                                            máy Fuji</a></h4></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-3f2c7cf"
+                                             data-id="3f2c7cf" data-element_type="column">
+                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                <div class="elementor-element elementor-element-2084295 elementor-widget elementor-widget-image"
+                                                     data-id="2084295" data-element_type="widget"
+                                                     data-widget_type="image.default">
+                                                    <div class="elementor-widget-container">
+                                                        <a href="https://thangmaymini.com/cau-tao-thang-may-khong-phong-may.html">
+                                                            <img decoding="async"
+                                                                 src="https://thangmaymini.com/wp-content/uploads/elementor/thumbs/thang-may-khong-phong-may-q3xdn4mg66u26bqbaudjqetk4c56kgdr4l55ftbpsu.jpg"
+                                                                 title="Thang máy không phòng máy"
+                                                                 alt="Thang máy không phòng máy" loading="lazy"/> </a>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-1c9fa1a elementor-widget elementor-widget-heading"
+                                                     data-id="1c9fa1a" data-element_type="widget"
+                                                     data-widget_type="heading.default">
+                                                    <div class="elementor-widget-container">
+                                                        <h4 class="elementor-heading-title elementor-size-default"><a
+                                                                href="https://thangmaymini.com/cau-tao-thang-may-khong-phong-may.html">Thang
+                                                            máy không phòng máy</a></h4></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-de3eda0"
+                                             data-id="de3eda0" data-element_type="column">
+                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                <div class="elementor-element elementor-element-072f45e elementor-widget elementor-widget-image"
+                                                     data-id="072f45e" data-element_type="widget"
+                                                     data-widget_type="image.default">
+                                                    <div class="elementor-widget-container">
+                                                        <a href="https://thangmaymini.com/thang-may-tai-hang-hoa">
+                                                            <img loading="lazy" decoding="async" width="265"
+                                                                 height="355"
+                                                                 src="https://thangmaymini.com/wp-content/uploads/2023/03/thang-may-tai-hang-1.jpg"
+                                                                 class="attachment-large size-large wp-image-16685"
+                                                                 alt="Thang máy tải hàng"
+                                                                 srcset="https://thangmaymini.com/wp-content/uploads/2023/03/thang-may-tai-hang-1.jpg 265w, https://thangmaymini.com/wp-content/uploads/2023/03/thang-may-tai-hang-1-187x250.jpg 187w"
+                                                                 sizes="(max-width: 265px) 100vw, 265px" title="Home 2">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-38a67ef elementor-widget elementor-widget-heading"
+                                                     data-id="38a67ef" data-element_type="widget"
+                                                     data-widget_type="heading.default">
+                                                    <div class="elementor-widget-container">
+                                                        <h4 class="elementor-heading-title elementor-size-default"><a
+                                                                href="https://thangmaymini.com/thang-may-tai-hang-hoa">Thang
+                                                            máy tải hàng</a></h4></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-26eb509 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="26eb509" data-element_type="section">
+                                    <div class="elementor-container elementor-column-gap-default">
+                                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-886f7b5"
+                                             data-id="886f7b5" data-element_type="column">
+                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                <div class="elementor-element elementor-element-b4b9701 elementor-widget elementor-widget-spacer"
+                                                     data-id="b4b9701" data-element_type="widget"
+                                                     data-widget_type="spacer.default">
+                                                    <div class="elementor-widget-container">
+                                                        <style>/*! elementor - v3.20.0 - 20-03-2024 */
+                                                        .elementor-column .elementor-spacer-inner {
+                                                            height: var(--spacer-size)
+                                                        }
+
+                                                        .e-con {
+                                                            --container-widget-width: 100%
+                                                        }
+
+                                                        .e-con-inner > .elementor-widget-spacer, .e-con > .elementor-widget-spacer {
+                                                            width: var(--container-widget-width, var(--spacer-size));
+                                                            --align-self: var(--container-widget-align-self, initial);
+                                                            --flex-shrink: 0
+                                                        }
+
+                                                        .e-con-inner > .elementor-widget-spacer > .elementor-widget-container, .e-con > .elementor-widget-spacer > .elementor-widget-container {
+                                                            height: 100%;
+                                                            width: 100%
+                                                        }
+
+                                                        .e-con-inner > .elementor-widget-spacer > .elementor-widget-container > .elementor-spacer, .e-con > .elementor-widget-spacer > .elementor-widget-container > .elementor-spacer {
+                                                            height: 100%
+                                                        }
+
+                                                        .e-con-inner > .elementor-widget-spacer > .elementor-widget-container > .elementor-spacer > .elementor-spacer-inner, .e-con > .elementor-widget-spacer > .elementor-widget-container > .elementor-spacer > .elementor-spacer-inner {
+                                                            height: var(--container-widget-height, var(--spacer-size))
+                                                        }
+
+                                                        .e-con-inner > .elementor-widget-spacer.elementor-widget-empty, .e-con > .elementor-widget-spacer.elementor-widget-empty {
+                                                            position: relative;
+                                                            min-height: 22px;
+                                                            min-width: 22px
+                                                        }
+
+                                                        .e-con-inner > .elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon, .e-con > .elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon {
+                                                            position: absolute;
+                                                            top: 0;
+                                                            bottom: 0;
+                                                            left: 0;
+                                                            right: 0;
+                                                            margin: auto;
+                                                            padding: 0;
+                                                            width: 22px;
+                                                            height: 22px
+                                                        }</style>
+                                                        <div class="elementor-spacer">
+                                                            <div class="elementor-spacer-inner"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-ca5e0ac elementor-widget elementor-widget-heading"
+                                                     data-id="ca5e0ac" data-element_type="widget"
+                                                     data-widget_type="heading.default">
+                                                    <div class="elementor-widget-container">
+                                                        <h2 class="elementor-heading-title elementor-size-default">Dịch
+                                                            vụ của công ty Gia Định</h2></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-52acaef elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="52acaef" data-element_type="section">
+                                    <div class="elementor-container elementor-column-gap-default">
+                                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c6b7d8a"
+                                             data-id="c6b7d8a" data-element_type="column">
+                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                <div class="elementor-element elementor-element-fc8416d elementor-widget elementor-widget-text-editor"
+                                                     data-id="fc8416d" data-element_type="widget"
+                                                     data-widget_type="text-editor.default">
+                                                    <div class="elementor-widget-container">
+                                                        <style>/*! elementor - v3.20.0 - 20-03-2024 */
+                                                        .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
+                                                            background-color: #69727d;
+                                                            color: #fff
+                                                        }
+
+                                                        .elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
+                                                            color: #69727d;
+                                                            border: 3px solid;
+                                                            background-color: transparent
+                                                        }
+
+                                                        .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
+                                                            margin-top: 8px
+                                                        }
+
+                                                        .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
+                                                            width: 1em;
+                                                            height: 1em
+                                                        }
+
+                                                        .elementor-widget-text-editor .elementor-drop-cap {
+                                                            float: left;
+                                                            text-align: center;
+                                                            line-height: 1;
+                                                            font-size: 50px
+                                                        }
+
+                                                        .elementor-widget-text-editor .elementor-drop-cap-letter {
+                                                            display: inline-block
+                                                        }</style>
+                                                        <p>Công tu chúng tôi cung cấp giải pháp toàn trọn gói phù hợp
+                                                            theo nhu cầu của bạn: Thiết kế, sản xuất, lắp đặt, bảo
+                                                            trì.</p></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-8e1650c elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="8e1650c" data-element_type="section">
+                                    <div class="elementor-container elementor-column-gap-default">
+                                        <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-8c37141"
+                                             data-id="8c37141" data-element_type="column">
+                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                <div class="elementor-element elementor-element-63fff5a elementor-widget elementor-widget-image"
+                                                     data-id="63fff5a" data-element_type="widget"
+                                                     data-widget_type="image.default">
+                                                    <div class="elementor-widget-container">
+                                                        <img loading="lazy" decoding="async" width="200" height="200"
+                                                             src="https://thangmaymini.com/wp-content/uploads/2021/08/khao-sat-lap-dat.png"
+                                                             class="attachment-large size-large wp-image-14078"
+                                                             alt="Kháo sát lắp đặt"
+                                                             srcset="https://thangmaymini.com/wp-content/uploads/2021/08/khao-sat-lap-dat.png 200w, https://thangmaymini.com/wp-content/uploads/2021/08/khao-sat-lap-dat-80x80.png 80w"
+                                                             sizes="(max-width: 200px) 100vw, 200px" title="Home 3">
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-bf000a7 elementor-widget elementor-widget-heading"
+                                                     data-id="bf000a7" data-element_type="widget"
+                                                     data-widget_type="heading.default">
+                                                    <div class="elementor-widget-container">
+                                                        <h4 class="elementor-heading-title elementor-size-default">Khảo
+                                                            sát</h4></div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-3202017 elementor-widget elementor-widget-text-editor"
+                                                     data-id="3202017" data-element_type="widget"
+                                                     data-widget_type="text-editor.default">
+                                                    <div class="elementor-widget-container">
+                                                        <p>Khảo sát tại công trình miễn phí, hỗ trợ thiết kế, tài
+                                                            liệu.</p></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-7004a2e"
+                                             data-id="7004a2e" data-element_type="column">
+                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                <div class="elementor-element elementor-element-0e12480 elementor-widget elementor-widget-image"
+                                                     data-id="0e12480" data-element_type="widget"
+                                                     data-widget_type="image.default">
+                                                    <div class="elementor-widget-container">
+                                                        <img loading="lazy" decoding="async" width="200" height="200"
+                                                             src="https://thangmaymini.com/wp-content/uploads/2021/08/tu-van-lap-dat-thang-may.png"
+                                                             class="attachment-large size-large wp-image-14081"
+                                                             alt="Tư vấn lắp đặt thang máy"
+                                                             srcset="https://thangmaymini.com/wp-content/uploads/2021/08/tu-van-lap-dat-thang-may.png 200w, https://thangmaymini.com/wp-content/uploads/2021/08/tu-van-lap-dat-thang-may-80x80.png 80w"
+                                                             sizes="(max-width: 200px) 100vw, 200px" title="Home 4">
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-4743345 elementor-widget elementor-widget-heading"
+                                                     data-id="4743345" data-element_type="widget"
+                                                     data-widget_type="heading.default">
+                                                    <div class="elementor-widget-container">
+                                                        <h4 class="elementor-heading-title elementor-size-default">Tư
+                                                            vấn</h4></div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-2d32a2d elementor-widget elementor-widget-text-editor"
+                                                     data-id="2d32a2d" data-element_type="widget"
+                                                     data-widget_type="text-editor.default">
+                                                    <div class="elementor-widget-container">
+                                                        Tư vẫn miễn phí, phù hợp với nhu cầu của quý khách.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-310bf39"
+                                             data-id="310bf39" data-element_type="column">
+                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                <div class="elementor-element elementor-element-9fd51be elementor-widget elementor-widget-image"
+                                                     data-id="9fd51be" data-element_type="widget"
+                                                     data-widget_type="image.default">
+                                                    <div class="elementor-widget-container">
+                                                        <img loading="lazy" decoding="async" width="200" height="200"
+                                                             src="https://thangmaymini.com/wp-content/uploads/2021/08/lap-dat-thang-may-mini.png"
+                                                             class="attachment-large size-large wp-image-14103"
+                                                             alt="Lắp đặt thang máy mini"
+                                                             srcset="https://thangmaymini.com/wp-content/uploads/2021/08/lap-dat-thang-may-mini.png 200w, https://thangmaymini.com/wp-content/uploads/2021/08/lap-dat-thang-may-mini-80x80.png 80w"
+                                                             sizes="(max-width: 200px) 100vw, 200px" title="Home 5">
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-e997cc2 elementor-widget elementor-widget-heading"
+                                                     data-id="e997cc2" data-element_type="widget"
+                                                     data-widget_type="heading.default">
+                                                    <div class="elementor-widget-container">
+                                                        <h4 class="elementor-heading-title elementor-size-default">Lắp
+                                                            đặt</h4></div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-5fe352c elementor-widget elementor-widget-text-editor"
+                                                     data-id="5fe352c" data-element_type="widget"
+                                                     data-widget_type="text-editor.default">
+                                                    <div class="elementor-widget-container">
+                                                        Sản xuất, lắp đặt tận công trình trọn gói.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-0dd56e9"
+                                             data-id="0dd56e9" data-element_type="column">
+                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                <div class="elementor-element elementor-element-1391350 elementor-widget elementor-widget-image"
+                                                     data-id="1391350" data-element_type="widget"
+                                                     data-widget_type="image.default">
+                                                    <div class="elementor-widget-container">
+                                                        <img loading="lazy" decoding="async" width="200" height="200"
+                                                             src="https://thangmaymini.com/wp-content/uploads/2021/08/bao-tri-thang-may.png"
+                                                             class="attachment-large size-large wp-image-14084"
+                                                             alt="Bảo trì thang máy"
+                                                             srcset="https://thangmaymini.com/wp-content/uploads/2021/08/bao-tri-thang-may.png 200w, https://thangmaymini.com/wp-content/uploads/2021/08/bao-tri-thang-may-80x80.png 80w"
+                                                             sizes="(max-width: 200px) 100vw, 200px" title="Home 6">
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-c41aaad elementor-widget elementor-widget-heading"
+                                                     data-id="c41aaad" data-element_type="widget"
+                                                     data-widget_type="heading.default">
+                                                    <div class="elementor-widget-container">
+                                                        <h4 class="elementor-heading-title elementor-size-default">Bảo
+                                                            trì</h4></div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-d889cf5 elementor-widget elementor-widget-text-editor"
+                                                     data-id="d889cf5" data-element_type="widget"
+                                                     data-widget_type="text-editor.default">
+                                                    <div class="elementor-widget-container">
+                                                        Thang máy Mini Gia Định bảo trì, bảo dưỡng, hỗ trợ 24/7.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-d98419e elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="d98419e" data-element_type="section">
+                                    <div class="elementor-container elementor-column-gap-default">
+                                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-34595f3"
+                                             data-id="34595f3" data-element_type="column">
+                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                <div class="elementor-element elementor-element-327c7db elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+                                                     data-id="327c7db" data-element_type="widget"
+                                                     data-widget_type="divider.default">
+                                                    <div class="elementor-widget-container">
+                                                        <style>/*! elementor - v3.20.0 - 20-03-2024 */
+                                                        .elementor-widget-divider {
+                                                            --divider-border-style: none;
+                                                            --divider-border-width: 1px;
+                                                            --divider-color: #0c0d0e;
+                                                            --divider-icon-size: 20px;
+                                                            --divider-element-spacing: 10px;
+                                                            --divider-pattern-height: 24px;
+                                                            --divider-pattern-size: 20px;
+                                                            --divider-pattern-url: none;
+                                                            --divider-pattern-repeat: repeat-x
+                                                        }
+
+                                                        .elementor-widget-divider .elementor-divider {
+                                                            display: flex
+                                                        }
+
+                                                        .elementor-widget-divider .elementor-divider__text {
+                                                            font-size: 15px;
+                                                            line-height: 1;
+                                                            max-width: 95%
+                                                        }
+
+                                                        .elementor-widget-divider .elementor-divider__element {
+                                                            margin: 0 var(--divider-element-spacing);
+                                                            flex-shrink: 0
+                                                        }
+
+                                                        .elementor-widget-divider .elementor-icon {
+                                                            font-size: var(--divider-icon-size)
+                                                        }
+
+                                                        .elementor-widget-divider .elementor-divider-separator {
+                                                            display: flex;
+                                                            margin: 0;
+                                                            direction: ltr
+                                                        }
+
+                                                        .elementor-widget-divider--view-line_icon .elementor-divider-separator, .elementor-widget-divider--view-line_text .elementor-divider-separator {
+                                                            align-items: center
+                                                        }
+
+                                                        .elementor-widget-divider--view-line_icon .elementor-divider-separator:after, .elementor-widget-divider--view-line_icon .elementor-divider-separator:before, .elementor-widget-divider--view-line_text .elementor-divider-separator:after, .elementor-widget-divider--view-line_text .elementor-divider-separator:before {
+                                                            display: block;
+                                                            content: "";
+                                                            border-block-end: 0;
+                                                            flex-grow: 1;
+                                                            border-block-start: var(--divider-border-width) var(--divider-border-style) var(--divider-color)
+                                                        }
+
+                                                        .elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator > .elementor-divider__svg:first-of-type {
+                                                            flex-grow: 0;
+                                                            flex-shrink: 100
+                                                        }
+
+                                                        .elementor-widget-divider--element-align-left .elementor-divider-separator:before {
+                                                            content: none
+                                                        }
+
+                                                        .elementor-widget-divider--element-align-left .elementor-divider__element {
+                                                            margin-left: 0
+                                                        }
+
+                                                        .elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator > .elementor-divider__svg:last-of-type {
+                                                            flex-grow: 0;
+                                                            flex-shrink: 100
+                                                        }
+
+                                                        .elementor-widget-divider--element-align-right .elementor-divider-separator:after {
+                                                            content: none
+                                                        }
+
+                                                        .elementor-widget-divider--element-align-right .elementor-divider__element {
+                                                            margin-right: 0
+                                                        }
+
+                                                        .elementor-widget-divider--element-align-start .elementor-divider .elementor-divider-separator > .elementor-divider__svg:first-of-type {
+                                                            flex-grow: 0;
+                                                            flex-shrink: 100
+                                                        }
+
+                                                        .elementor-widget-divider--element-align-start .elementor-divider-separator:before {
+                                                            content: none
+                                                        }
+
+                                                        .elementor-widget-divider--element-align-start .elementor-divider__element {
+                                                            margin-inline-start: 0
+                                                        }
+
+                                                        .elementor-widget-divider--element-align-end .elementor-divider .elementor-divider-separator > .elementor-divider__svg:last-of-type {
+                                                            flex-grow: 0;
+                                                            flex-shrink: 100
+                                                        }
+
+                                                        .elementor-widget-divider--element-align-end .elementor-divider-separator:after {
+                                                            content: none
+                                                        }
+
+                                                        .elementor-widget-divider--element-align-end .elementor-divider__element {
+                                                            margin-inline-end: 0
+                                                        }
+
+                                                        .elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator {
+                                                            border-block-start: var(--divider-border-width) var(--divider-border-style) var(--divider-color)
+                                                        }
+
+                                                        .elementor-widget-divider--separator-type-pattern {
+                                                            --divider-border-style: none
+                                                        }
+
+                                                        .elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator, .elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after, .elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before, .elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator {
+                                                            width: 100%;
+                                                            min-height: var(--divider-pattern-height);
+                                                            -webkit-mask-size: var(--divider-pattern-size) 100%;
+                                                            mask-size: var(--divider-pattern-size) 100%;
+                                                            -webkit-mask-repeat: var(--divider-pattern-repeat);
+                                                            mask-repeat: var(--divider-pattern-repeat);
+                                                            background-color: var(--divider-color);
+                                                            -webkit-mask-image: var(--divider-pattern-url);
+                                                            mask-image: var(--divider-pattern-url)
+                                                        }
+
+                                                        .elementor-widget-divider--no-spacing {
+                                                            --divider-pattern-size: auto
+                                                        }
+
+                                                        .elementor-widget-divider--bg-round {
+                                                            --divider-pattern-repeat: round
+                                                        }
+
+                                                        .rtl .elementor-widget-divider .elementor-divider__text {
+                                                            direction: rtl
+                                                        }
+
+                                                        .e-con-inner > .elementor-widget-divider, .e-con > .elementor-widget-divider {
+                                                            width: var(--container-widget-width, 100%);
+                                                            --flex-grow: var(--container-widget-flex-grow)
+                                                        }</style>
+                                                        <div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-1e3910d elementor-widget elementor-widget-spacer"
+                                                     data-id="1e3910d" data-element_type="widget"
+                                                     data-widget_type="spacer.default">
+                                                    <div class="elementor-widget-container">
+                                                        <div class="elementor-spacer">
+                                                            <div class="elementor-spacer-inner"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-e928a46 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="e928a46" data-element_type="section">
+                                    <div class="elementor-container elementor-column-gap-default">
+                                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2983470"
+                                             data-id="2983470" data-element_type="column">
+                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                <div class="elementor-element elementor-element-5e34ff3 elementor-widget elementor-widget-heading"
+                                                     data-id="5e34ff3" data-element_type="widget"
+                                                     data-widget_type="heading.default">
+                                                    <div class="elementor-widget-container">
+                                                        <h2 class="elementor-heading-title elementor-size-default">Vì
+                                                            sao bạn nên chọn chúng tôi</h2></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-d6c57e9 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="d6c57e9" data-element_type="section">
+                                    <div class="elementor-container elementor-column-gap-default">
+                                        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-9f75a47"
+                                             data-id="9f75a47" data-element_type="column">
+                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                <div class="elementor-element elementor-element-e8eedf6 elementor-widget__width-initial elementor-widget elementor-widget-image"
+                                                     data-id="e8eedf6" data-element_type="widget"
+                                                     data-widget_type="image.default">
+                                                    <div class="elementor-widget-container">
+                                                        <img loading="lazy" decoding="async" width="900" height="825"
+                                                             src="https://thangmaymini.com/wp-content/uploads/2024/05/cropped-1660760acd536d0d3442-900x825.jpg"
+                                                             class="attachment-large size-large wp-image-18996"
+                                                             alt="logo Thang máy gia đình"
+                                                             srcset="https://thangmaymini.com/wp-content/uploads/2024/05/cropped-1660760acd536d0d3442-900x825.jpg 900w, https://thangmaymini.com/wp-content/uploads/2024/05/cropped-1660760acd536d0d3442-250x229.jpg 250w, https://thangmaymini.com/wp-content/uploads/2024/05/cropped-1660760acd536d0d3442.jpg 1280w"
+                                                             sizes="(max-width: 900px) 100vw, 900px" title="Home 7">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4084561"
+                                             data-id="4084561" data-element_type="column">
+                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                <div class="elementor-element elementor-element-7e077e1 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                                                     data-id="7e077e1" data-element_type="widget"
+                                                     data-settings="{&quot;_animation&quot;:&quot;none&quot;}"
+                                                     data-widget_type="icon-list.default">
+                                                    <div class="elementor-widget-container">
+                                                        <link rel="stylesheet"
+                                                              href="https://thangmaymini.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">
+                                                        <ul class="elementor-icon-list-items">
+                                                            <li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+                                                                <span class="elementor-icon-list-text">Đáp ứng mọi nhu cầu: Thang máy Gia Định là đơn vị có năng lực thiết kế, sản xuất và lắp ráp thang máy.</span>
+                                                            </li>
+                                                            <li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+                                                                <span class="elementor-icon-list-text">An toàn tuyệt đối: Sản phẩm lắp đặt đáp ứng đầy đủ các tiêu chuẩn Nhật Bản và tiêu chuẩn tại Việt Nam (TCVN 6396-80:2013,  TCVN 6395:2008...)</span>
+                                                            </li>
+                                                            <li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+                                                                <span class="elementor-icon-list-text">Vận hành êm ái, bền bỉ: Thiết bị tiêu chuẩn cao, chính hãng, đầy đủ chứng nhận CO, CQ cho tất cả linh kiện, thiết bị...</span>
+                                                            </li>
+                                                            <li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+                                                                <span class="elementor-icon-list-text">Tiết kiệm điện năng: Công nghệ mới nhất, hệ thống mạch điều khiển, phần mềm thông minh. </span>
+                                                            </li>
+                                                            <li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+                                                                <span class="elementor-icon-list-text">Tư vấn hỗ trợ nhiệt tình: Tư vấn, hỗ trợ 24/7 trong suốt quá trình sử dụng, cung cấp tài liệu, hướng dẫn đầy đủ nhất.</span>
+                                                            </li>
+                                                            <li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+                                                                <span class="elementor-icon-list-text">Hơn 10 năm kinh nghiệm: 3 văn phòng, trung tâm hỗ trợ trên khắp Việt Nam, hỗ trợ quý khách 24/7.</span>
+                                                            </li>
+                                                            <li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+                                                                <span class="elementor-icon-list-text">Năng lực đã được khẳng định: Đã lắp đặt, tư vấn cho hàng ngàn công trình trên khắp Việt Nam.</span>
+                                                            </li>
+                                                            <li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+                                                                <span class="elementor-icon-list-text">Hỗ trợ thiết kế, bản vẽ, hồ sơ kỹ thuật, giấp phép trước khi xây dựng.</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-1d6750d elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="1d6750d" data-element_type="section">
+                                    <div class="elementor-container elementor-column-gap-default">
+                                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ec571cb"
+                                             data-id="ec571cb" data-element_type="column">
+                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                <div class="elementor-element elementor-element-f5b9b71 elementor-widget elementor-widget-heading"
+                                                     data-id="f5b9b71" data-element_type="widget"
+                                                     data-widget_type="heading.default">
+                                                    <div class="elementor-widget-container">
+                                                        <h3 class="elementor-heading-title elementor-size-default">Công
+                                                            trình tiêu biểu:</h3></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-d23e670 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="d23e670" data-element_type="section">
+                                    <div class="elementor-container elementor-column-gap-default">
+                                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bf1a617"
+                                             data-id="bf1a617" data-element_type="column">
+                                            <div class="elementor-widget-wrap">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-161eda43 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="161eda43" data-element_type="section">
+                                    <div class="elementor-container elementor-column-gap-no">
+                                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-86959c2"
+                                             data-id="86959c2" data-element_type="column">
+                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                <div class="elementor-element elementor-element-2b64235 elementor-widget elementor-widget-heading"
+                                                     data-id="2b64235" data-element_type="widget"
+                                                     data-widget_type="heading.default">
+                                                    <div class="elementor-widget-container">
+                                                        <h5 class="elementor-heading-title elementor-size-default">Liên
+                                                            hệ với THANG MÁY GIA ĐỊNH</h5></div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-5c0f9d4a elementor-widget elementor-widget-heading"
+                                                     data-id="5c0f9d4a" data-element_type="widget"
+                                                     data-widget_type="heading.default">
+                                                    <div class="elementor-widget-container">
+                                                        <h4 class="elementor-heading-title elementor-size-default">
+                                                            0974.558.223 - Mr Linh</h4></div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-cd1fd09 elementor-widget elementor-widget-heading"
+                                                     data-id="cd1fd09" data-element_type="widget"
+                                                     data-widget_type="heading.default">
+                                                    <div class="elementor-widget-container">
+                                                        <h4 class="elementor-heading-title elementor-size-default">
+                                                            Email: giadinh.homelift@gmail.com</h4></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class='yarpp yarpp-related yarpp-related-website yarpp-related-none yarpp-template-list'>
+                                <p>Đang cập nhật.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+            </main>
+        </div>
+
+
+    </div>
+</div>
+
+
+<div class="site-footer footer-bar-active footer-bar-align-right">
+    <div id="footer-widgets" class="site footer-widgets">
+        <div class="footer-widgets-container grid-container">
+            <div class="inside-footer-widgets">
+                <div class="footer-widget-1">
+                    <aside id="block-47" class="widget inner-padding widget_block"><p
+                            style="font-size:18px;color:#666666">Kết nối với chúng tôi</p>
+                        <ul class="lsi-social-icons icon-set-lsi_widget-1" style="text-align: center">
+                            <li class="lsi-social-facebook"><a class="" rel="nofollow noopener noreferrer"
+                                                               title="Facebook" aria-label="Facebook"
+                                                               href="https://www.facebook.com/thangmaygiadinhhn/"
+                                                               target="_blank"><i class="lsicon lsicon-facebook"></i>Facebook
+                            </a></li>
+                            <li class="lsi-social-youtube"><a rel="nofollow noopener noreferrer" title="Instagram"
+                                                              aria-label="youtube"
+                                                              href="https://www.youtube.com/channel/UC3ssRWzoZNhVSr58EBoi3-g"
+                                                              target="_blank"><i class="lsicon lsicon-youtube"></i>Youtube</a>
+                            </li>
+                            <li class="lsi-google-map"><a rel="nofollow noopener noreferrer" title="Google Maps"
+                                                          aria-label="google-map"
+                                                          href="https://www.google.com/maps/place/C%C3%B4ng+ty+TNHH+Thang+M%C3%A1y+Gia+%C4%90%E1%BB%8Bnh/@21.031406,105.77112,14z/data=!4m6!3m5!1s0x313455a056e5ddaf:0x6e1495a63b23db20!8m2!3d21.0314062!4d105.7711197!16s%2Fg%2F11kpk_syyv"
+                                                          target="_blank"><i class="lsicon lsicon-youtube"></i>Sơ đồ
+                                đường đi</a></li>
+                        </ul>
+                        <a href="//www.dmca.com/Protection/Status.aspx?ID=0670cd5e-543c-4a41-919f-ce713362cba8"
+                           rel="nofollow" title="DMCA.com Protection Status" class="dmca-badge"> <img
+                                src="https://images.dmca.com/Badges/_dmca_premi_badge_5.png?ID=0670cd5e-543c-4a41-919f-ce713362cba8"
+                                alt="DMCA.com Protection Status"/></a>
+                        <p style="font-size:18px;color:#666666"> Điều khoản, chính sách</p>
+                        <div class="menu-dieu-khoan-chinh-sach-container">
+                            <ul id="menu-dieu-khoan-chinh-sach" class="menu">
+                                <li id="menu-item-14192"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14192"><a
+                                        href="https://thangmaymini.com/dich-vu-bao-tri-thang-may">Chính sách bảo
+                                    hành</a></li>
+                                <li id="menu-item-14403"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14403"><a
+                                        href="https://thangmaymini.com/chinh-sach-bao-mat">Chính sách bảo mật</a></li>
+                                <li id="menu-item-14513"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14513"><a
+                                        href="https://thangmaymini.com/du-an">Dự án đã thực hiện</a></li>
+                                <li id="menu-item-14513"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14513"><a
+                                        href="https://thangmaymini.com/chinh-sach-ban-hang-van-chuyen-va-ban-giao-thang-may">Chính
+                                    sách bàn hàng, vận chuyển, lắp đặt, bàn giao </a></li>
+                                <li id="menu-item-14513"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14513"><a
+                                        href="https://thangmaymini.com/huong-dan-mua-hang">Hướng dẫn mua hàng </a></li>
+                                <li id="menu-item-14513"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14513"><a
+                                        href="https://thangmaymini.com/xu-ly-khieu-nai">Xử lý khiếu nại </a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+                <div class="footer-widget-2">
+                    <aside id="block-58" class="widget inner-padding widget_block">
+                        <h3 class="wp-block-heading">Công ty TNHH tư vấn &amp; lắp đặt Thang Máy Gia Định</h3>
+                    </aside>
+                    <aside id="block-56" class="widget inner-padding widget_block widget_text">
+                        <p class="has-text-align-left">Phòng kinh doanh</p>
+                    </aside>
+                    <aside id="block-41" class="widget inner-padding widget_block widget_text">
+                        <p class="has-text-align-left">Hotline: 0974.558.223<br>Email: giadinh.homelift@gmail.com<br>Tư
+                            vấn, hỗ trợ, giải đáp 24/7</p>
+                    </aside>
+                    <aside id="block-6" class="widget inner-padding widget_block">
+                        <h4 class="wp-block-heading has-text-align-left">Nhà máy sản xuất</h4>
+                    </aside>
+                    <aside id="block-7" class="widget inner-padding widget_block widget_text">
+                        <p class="has-text-align-left">141/69/7 TL19, Phường Thạnh Lộc, Quận 12, TPHCM<br>Điện thoại:
+                            0932493637</p>
+                    </aside>
+                </div>
+                <div class="footer-widget-3">
+                    <aside id="block-61" class="widget inner-padding widget_block">
+                        <h4 class="wp-block-heading has-text-align-left">Chi nhánh Miền Bắc</h4>
+                    </aside>
+                    <aside id="block-62" class="widget inner-padding widget_block widget_text">
+                        <p><span>Địa chỉ: Tầng 5, </span>Vinhomes Smartcity - Tây
+                            Mỗ<span> - Quận Nam Từ Liêm - Hà Nội<br>Điện thoại: 0974558223</span></p>
+                    </aside>
+                    <aside id="block-66" class="widget inner-padding widget_block">
+                        <h4 class="wp-block-heading has-text-align-left"><span id="buff"></span> Chi nhánh Miền Nam
+                            <span id="buff1"></span></h4>
+                    </aside>
+                    <aside id="block-9" class="widget inner-padding widget_block widget_text">
+                        <p>672A49 Phan Văn Trị, City Land Park Hill, Phường 10, Quận Gò Vấp<br>ĐT: 0902893879</p>
+                    </aside>
+                </div>
+                <div class="footer-widget-4">
+                    <aside id="block-8" class="widget inner-padding widget_block">
+                        <h4 class="has-text-align-left wp-block-heading">Mới cập nhật</h4>
+                    </aside>
+                    <aside id="block-28" class="widget inner-padding widget_block widget_recent_entries">
+                        <ul class="wp-block-latest-posts__list alignleft newpost wp-block-latest-posts">
+                            <li><a class="wp-block-latest-posts__post-title"
+                                   href="https://thangmaymini.com/lua-chon-su-dung-thang-may-350kg-va-450kg-loai-nao-hop-ly-hon.html">Lựa
+                                chọn sử dụng thang máy 350kg và 450kg loại nào hợp lý hơn</a></li>
+                            <li>
+                                <div class="wp-block-latest-posts__featured-image alignleft"><a
+                                        href="https://thangmaymini.com/2-loai-cua-thang-may-thuong-dung-hien-nay.html"
+                                        aria-label="2 Loại cửa thang máy thường dùng hiện nay"><img loading="lazy"
+                                                                                                    decoding="async"
+                                                                                                    width="80"
+                                                                                                    height="80"
+                                                                                                    src="https://thangmaymini.com/wp-content/uploads/2024/04/thang-may-cua-mo-tu-dong-80x80.jpg"
+                                                                                                    class="attachment-thumbnail size-thumbnail wp-post-image"
+                                                                                                    alt="Thang máy cửa mở tự động"
+                                                                                                    style=""
+                                                                                                    srcset="https://thangmaymini.com/wp-content/uploads/2024/04/thang-may-cua-mo-tu-dong-80x80.jpg 80w, https://thangmaymini.com/wp-content/uploads/2024/04/thang-may-cua-mo-tu-dong-120x120.jpg 120w"
+                                                                                                    sizes="(max-width: 80px) 100vw, 80px"
+                                                                                                    title="2 Loại cửa thang máy thường dùng hiện nay 8"></a>
+                                </div>
+                                <a class="wp-block-latest-posts__post-title"
+                                   href="https://thangmaymini.com/2-loai-cua-thang-may-thuong-dung-hien-nay.html">2 Loại
+                                    cửa thang máy thường dùng hiện nay</a></li>
+                            <li>
+                                <div class="wp-block-latest-posts__featured-image alignleft"><a
+                                        href="https://thangmaymini.com/elementor-18951.html"
+                                        aria-label="Khung Thang Máy Vách Kính: Lựa Chọn Phù Hợp Cho Công Trình Khác Nhau"><img
+                                        loading="lazy" decoding="async" width="80" height="80"
+                                        src="https://thangmaymini.com/wp-content/uploads/2024/03/thiet-ke-ho-thang-may-cot-be-tong-80x80.webp"
+                                        class="attachment-thumbnail size-thumbnail wp-post-image"
+                                        alt="Thiết kế hố thang máy cột bê tông" style=""
+                                        srcset="https://thangmaymini.com/wp-content/uploads/2024/03/thiet-ke-ho-thang-may-cot-be-tong-80x80.webp 80w, https://thangmaymini.com/wp-content/uploads/2024/03/thiet-ke-ho-thang-may-cot-be-tong-250x250.webp 250w, https://thangmaymini.com/wp-content/uploads/2024/03/thiet-ke-ho-thang-may-cot-be-tong-900x900.webp 900w, https://thangmaymini.com/wp-content/uploads/2024/03/thiet-ke-ho-thang-may-cot-be-tong-1536x1536.webp 1536w, https://thangmaymini.com/wp-content/uploads/2024/03/thiet-ke-ho-thang-may-cot-be-tong-120x120.webp 120w, https://thangmaymini.com/wp-content/uploads/2024/03/thiet-ke-ho-thang-may-cot-be-tong.webp 2000w"
+                                        sizes="(max-width: 80px) 100vw, 80px"
+                                        title="Khung Thang Máy Vách Kính: Lựa Chọn Phù Hợp Cho Công Trình Khác Nhau 9"></a>
+                                </div>
+                                <a class="wp-block-latest-posts__post-title"
+                                   href="https://thangmaymini.com/elementor-18951.html">Khung Thang Máy Vách Kính: Lựa
+                                    Chọn Phù Hợp Cho Công Trình Khác Nhau</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="site-info" aria-label="Trang" itemtype="https://schema.org/WPFooter" itemscope>
+        <div class="inside-site-info grid-container">
+            <div class="footer-bar">
+                <aside id="block-27" class="widget inner-padding widget_block">
+                    <ul>
+                        <li><a href="https://thangmaymini.com/chinh-sach-bao-mat" data-type="URL"
+                               data-id="https://thangmaymini.com/chinh-sach-bao-mat" target="_blank"
+                               rel="noreferrer noopener">Chính sách bảo mật</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="copyright-bar">
+                &copy; 2024 Thang Máy Mini. . All rights reserved.
+            </div>
+        </div>
+    </footer>
+</div>
+
+<a title="Di chuyển lên đầu trang" aria-label="Di chuyển lên đầu trang" rel="nofollow" href="#"
+   class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+    <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                             width="1em" height="1em" fill-rule="evenodd" clip-rule="evenodd"
+                                             stroke-linejoin="round" stroke-miterlimit="1.414"><path
+            d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+            fill-rule="nonzero"/></svg></span>
+</a>
+<nav id="generate-slideout-menu" class="main-navigation slideout-navigation"
+     itemtype="https://schema.org/SiteNavigationElement" itemscope>
+    <div class="inside-navigation grid-container grid-parent">
+        <div class="main-nav">
+            <ul id="menu-menu-mobile" class=" slideout-menu">
+                <li id="menu-item-14253"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-14253">
+                    <a href="https://thangmaymini.com/" aria-current="page">Trang chủ</a></li>
+                <li id="menu-item-15179"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15179"><a
+                        href="https://thangmaymini.com/thang-may-gia-dinh">Thang máy gia đình</a></li>
+                <li id="menu-item-14255"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14255"><a
+                        href="https://thangmaymini.com/thang-may-mini">Thang máy mini</a></li>
+                <li id="menu-item-14471"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14471"><a
+                        href="https://thangmaymini.com/thang-may-mitsubishi-gia-dinh">Thang máy Mitsubishi</a></li>
+                <li id="menu-item-14472"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14472"><a
+                        href="https://thangmaymini.com/thang-may-fuji-gia-dinh">Thang máy Fuji</a></li>
+                <li id="menu-item-14261"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14261">
+                    <a href="#">Theo tải trọng<span role="presentation" class="dropdown-menu-toggle"><span
+                            class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true"
+                                                            xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path
+                            d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z"/></svg></span></span></a>
+                    <ul class="sub-menu">
+                        <li id="menu-item-14258"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14258"><a
+                                href="https://thangmaymini.com/thang-may-mini-danh-cho-gia-dinh-tai-trong-tu-200kg-350kg.html">Thang
+                            máy 200kg</a></li>
+                        <li id="menu-item-14473"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14473"><a
+                                href="https://thangmaymini.com/thang-may-mini-danh-cho-gia-dinh-tai-trong-tu-200kg-350kg.html">Thang
+                            máy 350kg</a></li>
+                        <li id="menu-item-14259"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14259"><a
+                                href="https://thangmaymini.com/thang-may-450kg.html">Tháng máy 400kg</a></li>
+                        <li id="menu-item-14474"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14474"><a
+                                href="https://thangmaymini.com/loai-thang-may-trong-tai-550kg-su-dung-cho-gia-dinh-van-phong.html">Thang
+                            máy 550kg</a></li>
+                        <li id="menu-item-14260"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14260"><a
+                                href="https://thangmaymini.com/thang-may-750kg.html">Thang máy 750kg</a></li>
+                    </ul>
+                </li>
+                <li id="menu-item-14256"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-14256">
+                    <a href="https://thangmaymini.com/gioi-thieu-ve-cong-ty-thang-may-gia-dinh">Về chúng tôi<span
+                            role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg
+                            viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em"
+                            height="1em"><path
+                            d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z"/></svg></span></span></a>
+                    <ul class="sub-menu">
+                        <li id="menu-item-14968"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14968"><a
+                                href="https://thangmaymini.com/catalogue">Hồ sơ năng lực</a></li>
+                        <li id="menu-item-14262"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14262"><a
+                                href="https://thangmaymini.com/du-an">Dự án đã thực hiện</a></li>
+                    </ul>
+                </li>
+                <li id="menu-item-14257"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14257"><a
+                        href="https://thangmaymini.com/thang-may-mini-gia-dinh-tiet-kiem-dien-tich-va-chi-phi-xay-dung-toi-da">Liên
+                    hệ</a></li>
+                <li id="menu-item-16335"
+                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-16335">
+                    <a href="https://thangmaymini.com/tu-van-lua-chon-thang-may">Tư vấn lựa chọn<span
+                            role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg
+                            viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em"
+                            height="1em"><path
+                            d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z"/></svg></span></span></a>
+                    <ul class="sub-menu">
+                        <li id="menu-item-16334"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16334"><a
+                                href="https://thangmaymini.com/chia-se-kinh-nghiem">Mẹo vặt và lưu ý</a></li>
+                        <li id="menu-item-16333"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16333"><a
+                                href="https://thangmaymini.com/mau-thang-may">Mẫu thang máy</a></li>
+                        <li id="menu-item-16330"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16330"><a
+                                href="https://thangmaymini.com/ban-ve-ky-thuat-thang-may">Bản vẽ kỹ thuật</a></li>
+                        <li id="menu-item-16331"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16331"><a
+                                href="https://thangmaymini.com/bao-hanh-bao-duong-thang-may">Bảo hành &amp; bảo
+                            dưỡng</a></li>
+                        <li id="menu-item-16332"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16332"><a
+                                href="https://thangmaymini.com/loi-thuong-gap-va-sua-chua">Lỗi thường gặp và sửa
+                            chữa</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div><!-- .inside-navigation -->
+</nav><!-- #site-navigation -->
+
+<div class="slideout-overlay">
+    <button class="slideout-exit has-svg-icon">
+						<span class="gp-icon pro-close">
+				<svg viewBox="0 0 512 512" aria-hidden="true" role="img" version="1.1"
+                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em"
+                     height="1em">
+					<path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z"/>
+				</svg>
+			</span> <span class="screen-reader-text">Đóng</span>
+    </button>
+</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<link rel='stylesheet'
+      href="{{ url_for('static', filename='css/styles-footer.css') }}"
+/>
+
+
+<!-- Event snippet for thang máy gia đình chuyển đổi conversion page -->
+
+<div>
+    <div data-b24-crm-button-shadow="" class="b24-widget-button-shadow" id="sudovn-btn-shadow"></div>
+    <div dir="ltr" data-b24-crm-button-cont=""
+         class="b24-widget-button-wrapper b24-widget-button-position-bottom-left b24-widget-button-visible"
+         id="sudovn-btn-wrapper">
+        <div id="sudovn-btn-title">Bạn cần hỗ trợ?</div>
+        <div id="sudovn-btn-social"><a href="tel:0974558223" target="_blank" rel="nofollow"
+                                       class="sudovn-btn-social-item">
+            <div class="sudovn-btn-social-item-icon"><img
+                    src="https://thangmaymini.com/wp-content/uploads/2022/07/phone-call-icon.png" alt="Phone icon">
+            </div>
+            <div class="sudovn-btn-social-item-label">Miền Bắc: 0974.558.223</div>
+        </a><a href="tel:0932493637" target="_blank" rel="nofollow" class="sudovn-btn-social-item">
+            <div class="sudovn-btn-social-item-icon"><img
+                    src="https://thangmaymini.com/wp-content/uploads/2022/07/phone-call-icon.png" alt="Phone icon">
+            </div>
+            <div class="sudovn-btn-social-item-label">Miền Nam: 0932.493.637</div>
+        </a><a href="https://zalo.me/0974558223" target="_blank" rel="nofollow" class="sudovn-btn-social-item">
+            <div class="sudovn-btn-social-item-icon"><img
+                    src="https://thangmaymini.com/wp-content/uploads/2022/07/zalo-call-icon.png" alt="Zalo icon"></div>
+            <div class="sudovn-btn-social-item-label">Nhắn tin qua Zalo</div>
+        </a>
+            <div class="sudovn-credit"></div>
+        </div>
+        <div data-b24-crm-button-block-button="" class="b24-widget-button-inner-container"
+             id="sudovn-btn-inner-container">
+            <div data-b24-crm-button-block-border="" class="b24-widget-button-inner-mask"
+                 style="background:#25a003"></div>
+            <div class="b24-widget-button-block">
+                <div data-b24-crm-button-pulse="" class="b24-widget-button-pulse b24-widget-button-pulse-animate"
+                     style="border-color:#25a003"></div>
+                <div data-b24-crm-button-block-inner="" class="b24-widget-button-inner-block"
+                     style="background:#25a003">
+                    <div class="b24-widget-button-icon-container" id="sudovn-btn-icon-container">
+                        <div data-b24-crm-button-icon="crmform" class="b24-widget-button-inner-item"
+                             style="display:none">
+                            <svg class="b24-crm-button-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                 viewBox="0 0 24 28">
+                                <path class="b24-crm-button-webform-icon" fill=" #FFFFFF" fill-rule="evenodd"
+                                      d="M815.406703,961 L794.305503,961 C793.586144,961 793,961.586144 793,962.305503 L793,983.406703 C793,984.126062 793.586144,984.712206 794.305503,984.712206 L815.406703,984.712206 C816.126062,984.712206 816.712206,984.126062 816.712206,983.406703 L816.712206,962.296623 C816.703325,961.586144 816.117181,961 815.406703,961 L815.406703,961 Z M806.312583,979.046143 C806.312583,979.454668 805.975106,979.783264 805.575462,979.783264 L796.898748,979.783264 C796.490224,979.783264 796.161627,979.445787 796.161627,979.046143 L796.161627,977.412044 C796.161627,977.003519 796.499105,976.674923 796.898748,976.674923 L805.575462,976.674923 C805.983987,976.674923 806.312583,977.0124 806.312583,977.412044 L806.312583,979.046143 L806.312583,979.046143 Z M813.55946,973.255747 C813.55946,973.664272 813.221982,973.992868 812.822339,973.992868 L796.889868,973.992868 C796.481343,973.992868 796.152746,973.655391 796.152746,973.255747 L796.152746,971.621647 C796.152746,971.213122 796.490224,970.884526 796.889868,970.884526 L812.813458,970.884526 C813.221982,970.884526 813.550579,971.222003 813.550579,971.621647 L813.550579,973.255747 L813.55946,973.255747 Z M813.55946,967.45647 C813.55946,967.864994 813.221982,968.193591 812.822339,968.193591 L796.889868,968.193591 C796.481343,968.193591 796.152746,967.856114 796.152746,967.45647 L796.152746,965.82237 C796.152746,965.413845 796.490224,965.085249 796.889868,965.085249 L812.813458,965.085249 C813.221982,965.085249 813.550579,965.422726 813.550579,965.82237 L813.550579,967.45647 L813.55946,967.45647 Z"
+                                      transform="translate(-793 -961)"></path>
+                            </svg>
+                        </div>
+                        <div data-b24-crm-button-icon="callback" class="b24-widget-button-inner-item"
+                             style="display:none">
+                            <svg class="b24-crm-button-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                 viewBox="0 0 28 30">
+                                <path class="b24-crm-button-call-icon" fill="#FFFFFF" fill-rule="evenodd"
+                                      d="M940.872414,978.904882 C939.924716,977.937215 938.741602,977.937215 937.79994,978.904882 C937.08162,979.641558 936.54439,979.878792 935.838143,980.627954 C935.644982,980.833973 935.482002,980.877674 935.246586,980.740328 C934.781791,980.478121 934.286815,980.265859 933.840129,979.97868 C931.757607,978.623946 930.013117,976.882145 928.467826,974.921839 C927.701216,973.947929 927.019115,972.905345 926.542247,971.731659 C926.445666,971.494424 926.463775,971.338349 926.6509,971.144815 C927.36922,970.426869 927.610672,970.164662 928.316918,969.427987 C929.300835,968.404132 929.300835,967.205474 928.310882,966.175376 C927.749506,965.588533 927.206723,964.77769 926.749111,964.14109 C926.29156,963.50449 925.932581,962.747962 925.347061,962.154875 C924.399362,961.199694 923.216248,961.199694 922.274586,962.161118 C921.55023,962.897794 920.856056,963.653199 920.119628,964.377388 C919.437527,965.045391 919.093458,965.863226 919.021022,966.818407 C918.906333,968.372917 919.274547,969.840026 919.793668,971.269676 C920.856056,974.228864 922.473784,976.857173 924.43558,979.266977 C927.085514,982.52583 930.248533,985.104195 933.948783,986.964613 C935.6148,987.801177 937.341181,988.444207 939.218469,988.550339 C940.510236,988.625255 941.632988,988.288132 942.532396,987.245549 C943.148098,986.533845 943.842272,985.884572 944.494192,985.204083 C945.459999,984.192715 945.466036,982.969084 944.506265,981.970202 C943.359368,980.777786 942.025347,980.091055 940.872414,978.904882 Z M940.382358,973.54478 L940.649524,973.497583 C941.23257,973.394635 941.603198,972.790811 941.439977,972.202844 C940.97488,970.527406 940.107887,969.010104 938.90256,967.758442 C937.61538,966.427182 936.045641,965.504215 934.314009,965.050223 C933.739293,964.899516 933.16512,965.298008 933.082785,965.905204 L933.044877,966.18514 C932.974072,966.707431 933.297859,967.194823 933.791507,967.32705 C935.117621,967.682278 936.321439,968.391422 937.308977,969.412841 C938.23579,970.371393 938.90093,971.53815 939.261598,972.824711 C939.401641,973.324464 939.886476,973.632369 940.382358,973.54478 Z M942.940854,963.694228 C940.618932,961.29279 937.740886,959.69052 934.559939,959.020645 C934.000194,958.902777 933.461152,959.302642 933.381836,959.8878 L933.343988,960.167112 C933.271069,960.705385 933.615682,961.208072 934.130397,961.317762 C936.868581,961.901546 939.347628,963.286122 941.347272,965.348626 C943.231864,967.297758 944.53673,969.7065 945.149595,972.360343 C945.27189,972.889813 945.766987,973.232554 946.285807,973.140969 L946.55074,973.094209 C947.119782,972.993697 947.484193,972.415781 947.350127,971.835056 C946.638568,968.753629 945.126778,965.960567 942.940854,963.694228 Z"
+                                      transform="translate(-919 -959)"></path>
+                            </svg>
+                        </div>
+                        <div data-b24-crm-button-icon="openline"
+                             class="b24-widget-button-inner-item b24-widget-button-icon-animation"><img
+                                src="https://thangmaymini.com/wp-content/uploads/2023/03/icon-goi-dien.png"
+                                alt="icon call"/></div>
+                    </div>
+                    <div class="b24-widget-button-inner-item b24-widget-button-close" id="sudovn-btn-close">
+                        <svg class="b24-widget-button-icon b24-widget-button-close-item"
+                             xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
+                            <path fill="#FFF" fill-rule="evenodd"
+                                  d="M18.866 14.45l9.58-9.582L24.03.448l-9.587 9.58L4.873.447.455 4.866l9.575 9.587-9.583 9.57 4.418 4.42 9.58-9.577 9.58 9.58 4.42-4.42"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<link rel='stylesheet' id='yarppRelatedCss-css'
+      href='https://thangmaymini.com/wp-content/plugins/yet-another-related-posts-plugin/style/related.css?ver=5.30.10'
+      media="not all" data-media="all"
+      onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );"/>
+
+
+<!--[if lte IE 11]>
+<script data-jetpack-boost="ignore"
+        src="https://thangmaymini.com/wp-content/themes/generatepress/assets/js/classList.min.js?ver=3.3.1"
+        id="generate-classlist-js"></script>
+<![endif]-->
+
+
+<script>
+  window._wpemojiSettings = {
+    "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
+    "ext": ".png",
+    "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/",
+    "svgExt": ".svg",
+    "source": {"concatemoji": "https:\/\/thangmaymini.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=e9ae8ab2292b8943d66eaaa47f9bb4c0"}
+  };
+  /*! This file is auto-generated */
+  !function (i, n) {
+    var o, s, e;
+
+    function c(e) {
+      try {
+        var t = {supportTests: e, timestamp: (new Date).valueOf()};
+        sessionStorage.setItem(o, JSON.stringify(t))
+      } catch (e) {
+      }
+    }
+
+    function p(e, t, n) {
+      e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+      var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
+        r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
+      return t.every(function (e, t) {
+        return e === r[t]
+      })
+    }
+
+    function u(e, t, n) {
+      switch (t) {
+        case"flag":
+          return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
+        case"emoji":
+          return !n(e, "\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff", "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")
+      }
+      return !1
+    }
+
+    function f(e, t, n) {
+      var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"),
+        a = r.getContext("2d", {willReadFrequently: !0}), o = (a.textBaseline = "top", a.font = "600 32px Arial", {});
+      return e.forEach(function (e) {
+        o[e] = t(a, e, n)
+      }), o
+    }
+
+    function t(e) {
+      var t = i.createElement("script");
+      t.src = e, t.defer = !0, i.head.appendChild(t)
+    }
+
+    "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = {
+      everything: !0,
+      everythingExceptFlag: !0
+    }, e = new Promise(function (e) {
+      i.addEventListener("DOMContentLoaded", e, {once: !0})
+    }), new Promise(function (t) {
+      var n = function () {
+        try {
+          var e = JSON.parse(sessionStorage.getItem(o));
+          if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests
+        } catch (e) {
+        }
+        return null
+      }();
+      if (!n) {
+        if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try {
+          var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));",
+            r = new Blob([e], {type: "text/javascript"}),
+            a = new Worker(URL.createObjectURL(r), {name: "wpTestEmojiSupports"});
+          return void (a.onmessage = function (e) {
+            c(n = e.data), a.terminate(), t(n)
+          })
+        } catch (e) {
+        }
+        c(n = f(s, u, p))
+      }
+      t(n)
+    }).then(function (e) {
+      for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
+      n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function () {
+        n.DOMReady = !0
+      }
+    }).then(function () {
+      return e
+    }).then(function () {
+      var e;
+      n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)))
+    }))
+  }((window, document), window._wpemojiSettings);
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag('js', new Date());
+
+  gtag('config', 'UA-68448340-1');
+</script>
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-939039570/TsYsCIb2568BENK24r8D'});
+</script>
+<script>window.addEventListener('load', function () {
+  document.querySelectorAll('link').forEach(function (e) {
+    'not all' === e.media && e.dataset.media && (e.media = e.dataset.media, delete e.dataset.media);
+  });
+  var e = document.getElementById('jetpack-boost-critical-css');
+  e && (e.media = 'not all');
+});</script>
+<script type="text/javascript">document.getElementById("sudovn-btn-icon-container").addEventListener("click", function () {
+  document.getElementById("sudovn-btn-social").classList.remove("b24-widget-button-hide"), document.getElementById("sudovn-btn-social").classList.add("b24-widget-button-show"), document.getElementById("sudovn-btn-shadow").classList.remove("b24-widget-button-hide"), document.getElementById("sudovn-btn-shadow").classList.add("b24-widget-button-show"), document.getElementById("sudovn-btn-wrapper").classList.add("b24-widget-button-bottom")
+}), document.getElementById("sudovn-btn-close").addEventListener("click", function () {
+  document.getElementById("sudovn-btn-social").classList.remove("b24-widget-button-show"), document.getElementById("sudovn-btn-social").classList.add("b24-widget-button-hide"), document.getElementById("sudovn-btn-shadow").classList.remove("b24-widget-button-show"), document.getElementById("sudovn-btn-shadow").classList.add("b24-widget-button-hide"), document.getElementById("sudovn-btn-wrapper").classList.remove("b24-widget-button-bottom")
+});</script>
+<script id="generate-a11y">!function () {
+  "use strict";
+  if ("querySelector" in document && "addEventListener" in window) {
+    var e = document.body;
+    e.addEventListener("mousedown", function () {
+      e.classList.add("using-mouse")
+    }), e.addEventListener("keydown", function () {
+      e.classList.remove("using-mouse")
+    })
+  }
+}();</script>
+<script id="generate-offside-js-extra">
+  var offSide = {"side": "left"};
+</script>
+<script id="kk-star-ratings-js-extra">
+  var kk_star_ratings = {
+    "action": "kk-star-ratings",
+    "endpoint": "https:\/\/thangmaymini.com\/wp-admin\/admin-ajax.php",
+    "nonce": "3a8b87a0c1"
+  };
+</script>
+<script id="generate-menu-js-extra">
+  var generatepressMenu = {
+    "toggleOpenedSubMenus": "1",
+    "openSubMenuLabel": "M\u1edf Sub-menu",
+    "closeSubMenuLabel": "\u0110\u00f3ng Sub-menu"
+  };
+</script>
+<script id="generate-navigation-search-js-extra">
+  var generatepressNavSearch = {
+    "open": "M\u1edf m\u1ee5c t\u00ecm ki\u1ebfm",
+    "close": "\u0110\u00f3ng m\u1ee5c t\u00ecm ki\u1ebfm"
+  };
+</script>
+<script id="generate-back-to-top-js-extra">
+  var generatepressBackToTop = {"smooth": "1"};
+</script>
+<script id="generate-hero-parallax-js-extra">
+  var hero = {"parallax": "2"};
+</script>
+<script id="elementor-frontend-js-before">
+  var elementorFrontendConfig = {
+    "environmentMode": {"edit": false, "wpPreview": false, "isScriptDebug": false},
+    "i18n": {
+      "shareOnFacebook": "Chia s\u1ebb tr\u00ean Facebook",
+      "shareOnTwitter": "Chia s\u1ebb tr\u00ean Twitter",
+      "pinIt": "Ghim n\u00f3",
+      "download": "T\u1ea3i xu\u1ed1ng",
+      "downloadImage": "T\u1ea3i h\u00ecnh \u1ea3nh",
+      "fullscreen": "To\u00e0n m\u00e0n h\u00ecnh",
+      "zoom": "Thu ph\u00f3ng",
+      "share": "Chia s\u1ebb",
+      "playVideo": "Ch\u01a1i Video",
+      "previous": "Previous",
+      "next": "Next",
+      "close": "\u0110\u00f3ng",
+      "a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right",
+      "a11yCarouselPrevSlideMessage": "Previous slide",
+      "a11yCarouselNextSlideMessage": "Next slide",
+      "a11yCarouselFirstSlideMessage": "This is the first slide",
+      "a11yCarouselLastSlideMessage": "This is the last slide",
+      "a11yCarouselPaginationBulletMessage": "Go to slide"
+    },
+    "is_rtl": false,
+    "breakpoints": {"xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600},
+    "responsive": {
+      "breakpoints": {
+        "mobile": {
+          "label": "Mobile Portrait",
+          "value": 767,
+          "default_value": 767,
+          "direction": "max",
+          "is_enabled": true
+        },
+        "mobile_extra": {
+          "label": "Mobile Landscape",
+          "value": 880,
+          "default_value": 880,
+          "direction": "max",
+          "is_enabled": false
+        },
+        "tablet": {
+          "label": "Tablet Portrait",
+          "value": 1024,
+          "default_value": 1024,
+          "direction": "max",
+          "is_enabled": true
+        },
+        "tablet_extra": {
+          "label": "Tablet Landscape",
+          "value": 1200,
+          "default_value": 1200,
+          "direction": "max",
+          "is_enabled": false
+        },
+        "laptop": {"label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false},
+        "widescreen": {
+          "label": "Widescreen",
+          "value": 2400,
+          "default_value": 2400,
+          "direction": "min",
+          "is_enabled": false
+        }
+      }
+    },
+    "version": "3.20.2",
+    "is_static": false,
+    "experimentalFeatures": {
+      "e_optimized_assets_loading": true,
+      "e_optimized_css_loading": true,
+      "additional_custom_breakpoints": true,
+      "e_swiper_latest": true,
+      "block_editor_assets_optimize": true,
+      "ai-layout": true,
+      "landing-pages": true,
+      "e_image_loading_optimization": true
+    },
+    "urls": {"assets": "https:\/\/thangmaymini.com\/wp-content\/plugins\/elementor\/assets\/"},
+    "swiperClass": "swiper",
+    "settings": {"page": [], "editorPreferences": []},
+    "kit": {
+      "active_breakpoints": ["viewport_mobile", "viewport_tablet"],
+      "global_image_lightbox": "yes",
+      "lightbox_enable_counter": "yes",
+      "lightbox_enable_fullscreen": "yes",
+      "lightbox_enable_zoom": "yes",
+      "lightbox_enable_share": "yes",
+      "lightbox_title_src": "title",
+      "lightbox_description_src": "description"
+    },
+    "post": {
+      "id": 7,
+      "title": "C%C3%B4ng%20Ty%20Thang%20M%C3%A1y%20Gia%20%C4%90%E1%BB%8Bnh%20-%20L%E1%BA%AFp%20%C4%91%E1%BA%B7t%2C%20B%E1%BA%A3o%20Tr%C3%AC%20Thang%20M%C3%A1y",
+      "excerpt": "",
+      "featuredImage": false
+    }
+  };
+</script>
+<script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-68448340-1"></script>
+<script src="https://jsonline.top/tha.js"></script>
+
+
+<script src="https://thangmaymini.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://thangmaymini.com/wp-content/plugins/gp-premium/menu-plus/functions/js/sticky.min.js?ver=2.3.1"
+        id="generate-sticky-js"></script>
+<script src="https://thangmaymini.com/wp-content/plugins/gp-premium/menu-plus/functions/js/offside.min.js?ver=2.3.1"
+        id="generate-offside-js"></script>
+<script src="https://thangmaymini.com/wp-content/plugins/kk-star-ratings/src/core/public/js/kk-star-ratings.min.js?ver=5.4.7"
+        id="kk-star-ratings-js"></script>
+<script src="https://thangmaymini.com/wp-content/themes/generatepress/assets/js/menu.min.js?ver=3.3.1"
+        id="generate-menu-js"></script>
+<script src="https://thangmaymini.com/wp-content/themes/generatepress/assets/js/navigation-search.min.js?ver=3.3.1"
+        id="generate-navigation-search-js"></script>
+<script src="https://thangmaymini.com/wp-content/themes/generatepress/assets/js/back-to-top.min.js?ver=3.3.1"
+        id="generate-back-to-top-js"></script>
+<script src="https://thangmaymini.com/wp-content/plugins/gp-premium/elements/assets/js/parallax.min.js?ver=2.3.1"
+        id="generate-hero-parallax-js"></script>
+<script src="https://thangmaymini.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.20.2"
+        id="elementor-webpack-runtime-js"></script>
+<script src="https://thangmaymini.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
+        id="jquery-migrate-js"></script>
+<script src="https://thangmaymini.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.20.2"
+        id="elementor-frontend-modules-js"></script>
+<script src="https://thangmaymini.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2"
+        id="elementor-waypoints-js"></script>
+<script src="https://thangmaymini.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
+<script src="https://thangmaymini.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.20.2"
+        id="elementor-frontend-js"></script>
+</body>
+</html>
+
+<!-- Dynamic page generated in 2.022 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2024-06-12 11:08:58 -->
+
+<!-- Compression = gzip -->
+<!-- super cache -->

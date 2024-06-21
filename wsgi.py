@@ -13,18 +13,5 @@ def get_context():
     return dict(app=app)
 
 
-@app.cli.command()
-def create_db():
-    """Create the configured database."""
-    db.create_all()
-
-
-@app.cli.command()
-@click.confirmation_option(prompt='Drop all database tables?')
-def drop_db():
-    """Drop the current database."""
-    db.drop_all()
-
-
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
